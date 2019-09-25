@@ -6,13 +6,11 @@ import java.sql.*;
 
 public class UserDao {
     public void add(User user) throws ClassNotFoundException, SQLException {
-        Class.forName("org.mariadb.jdbc.Driver");
-        Connection c = DriverManager.getConnection(
-                "jdbc:mysql://localhost/learning_spring",
-                "root",
-                "jdh0412"
-        );
+        // 관심사 1. 분리 완료
+        Connection c = getConnection();
 
+        // 관심사 2.
+        // SQL 쿼리를 만들고 실행
         PreparedStatement ps = c.prepareStatement(
                 "INSERT INTO users (id, name, password) VALUES(?, ?, ?)");
         ps.setString(1, user.getId());
@@ -21,17 +19,15 @@ public class UserDao {
 
         ps.executeUpdate();
 
+        // 관심사 3.
+        // 작업을 마치고 리소스 해제
         ps.close();
         c.close();
     }
 
     public User get(String id) throws ClassNotFoundException, SQLException {
-        Class.forName("org.mariadb.jdbc.Driver");
-        Connection c = DriverManager.getConnection(
-                "jdbc:mysql://localhost/learning_spring",
-                "root",
-                "jdh0412"
-        );
+        // 관심사 1. 분리 완료
+        Connection c = getConnection();
 
         PreparedStatement ps = c.prepareStatement(
                 "SELECT * FROM users WHERE id = ?"
@@ -50,6 +46,18 @@ public class UserDao {
         c.close();
 
         return user;
+    }
+
+    // 관심사 1. DB 연결 과정
+    private Connection getConnection() throws ClassNotFoundException, SQLException {
+        Class.forName("org.mariadb.jdbc.Driver");
+        Connection c =
+        DriverManager.getConnection(
+                "jdbc:mysql://localhost/learning_spring",
+                "root",
+                "jdh0412"
+        );
+        return c;
     }
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {

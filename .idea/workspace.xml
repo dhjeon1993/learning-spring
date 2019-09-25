@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/main/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/main/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,7 +31,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="C:/extlib/mariadb-java-client-2.4.4.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5632353" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -90,7 +89,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
