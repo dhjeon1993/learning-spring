@@ -8,8 +8,8 @@ public class UserDao {
     // 관심사 분리. 독립된 클래스로 DB 연결 작업 수행
     private ConnectionMaker connectionMaker;
 
-    public UserDao() {
-        connectionMaker = new DConnectionMaker();
+    public UserDao(ConnectionMaker connectionMaker) {
+        this.connectionMaker = connectionMaker;
     }
 
     public void add(User user) throws ClassNotFoundException, SQLException {

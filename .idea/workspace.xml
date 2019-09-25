@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/SimpleConnectionMaker.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.UserDaoTest">
     <configuration name="UserDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="springbook.user.dao.UserDao" />
       <module name="learning-spring" />
@@ -62,8 +61,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserDaoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="springbook.user.main.UserDaoTest" />
+      <module name="learning-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.user.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UserDaoTest" />
         <item itemvalue="Application.UserDao" />
       </list>
     </recent_temporary>
@@ -79,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569388160571</updated>
       <workItem from="1569388164001" duration="1939000" />
-      <workItem from="1569424426024" duration="1715000" />
+      <workItem from="1569424426024" duration="2447000" />
     </task>
     <servers />
   </component>
