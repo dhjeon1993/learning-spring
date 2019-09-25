@@ -4,10 +4,17 @@ import springbook.user.domain.User;
 
 import java.sql.*;
 
-public abstract class UserDao {
+public class UserDao {
+    // 관심사 분리. 독립된 클래스로 DB 연결 작업 수행
+    private SimpleConnectionMaker simpleConnectionMaker;
+
+    public UserDao() {
+        simpleConnectionMaker = new SimpleConnectionMaker();
+    }
+
     public void add(User user) throws ClassNotFoundException, SQLException {
         // 관심사 1. 분리 완료
-        Connection c = getConnection();
+        Connection c = simpleConnectionMaker.makeNewConnection();
 
         // 관심사 2.
         // SQL 쿼리를 만들고 실행
@@ -27,7 +34,7 @@ public abstract class UserDao {
 
     public User get(String id) throws ClassNotFoundException, SQLException {
         // 관심사 1. 분리 완료
-        Connection c = getConnection();
+        Connection c = simpleConnectionMaker.makeNewConnection();
 
         PreparedStatement ps = c.prepareStatement(
                 "SELECT * FROM users WHERE id = ?"
@@ -47,7 +54,4 @@ public abstract class UserDao {
 
         return user;
     }
-
-    // 관심사 1. DB 연결 과정
-    public abstract Connection getConnection() throws ClassNotFoundException, SQLException;
 }
