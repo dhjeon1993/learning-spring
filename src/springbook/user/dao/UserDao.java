@@ -6,15 +6,15 @@ import java.sql.*;
 
 public class UserDao {
     // 관심사 분리. 독립된 클래스로 DB 연결 작업 수행
-    private SimpleConnectionMaker simpleConnectionMaker;
+    private ConnectionMaker connectionMaker;
 
     public UserDao() {
-        simpleConnectionMaker = new SimpleConnectionMaker();
+        connectionMaker = new DConnectionMaker();
     }
 
     public void add(User user) throws ClassNotFoundException, SQLException {
         // 관심사 1. 분리 완료
-        Connection c = simpleConnectionMaker.makeNewConnection();
+        Connection c = connectionMaker.makeConnection();
 
         // 관심사 2.
         // SQL 쿼리를 만들고 실행
@@ -34,7 +34,7 @@ public class UserDao {
 
     public User get(String id) throws ClassNotFoundException, SQLException {
         // 관심사 1. 분리 완료
-        Connection c = simpleConnectionMaker.makeNewConnection();
+        Connection c = connectionMaker.makeConnection();
 
         PreparedStatement ps = c.prepareStatement(
                 "SELECT * FROM users WHERE id = ?"
