@@ -8,7 +8,11 @@ public class UserDao {
     // 관심사 분리. 독립된 클래스로 DB 연결 작업 수행
     private ConnectionMaker connectionMaker;
 
-    public UserDao(ConnectionMaker connectionMaker) {
+//    public UserDao(ConnectionMaker connectionMaker) {
+//        this.connectionMaker = connectionMaker;
+//    }
+    // 주입 방식 변경
+    public void setConnectionMaker(ConnectionMaker connectionMaker) {
         this.connectionMaker = connectionMaker;
     }
 

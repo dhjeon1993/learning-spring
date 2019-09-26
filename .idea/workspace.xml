@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/main/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/main/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/main/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/main/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UserDaoConnetionCountingTest">
+  <component name="RunManager" selected="Application.UserDaoTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="springbook.user.main.App" />
       <module name="learning-spring" />
@@ -104,9 +102,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UserDaoTest" />
         <item itemvalue="Application.UserDaoConnetionCountingTest" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.UserDaoTest" />
         <item itemvalue="Application.UserDao" />
       </list>
     </recent_temporary>
@@ -124,7 +122,7 @@
       <workItem from="1569388164001" duration="1939000" />
       <workItem from="1569424426024" duration="2447000" />
       <workItem from="1569486133830" duration="19000" />
-      <workItem from="1569488635818" duration="7630000" />
+      <workItem from="1569488635818" duration="8090000" />
     </task>
     <servers />
   </component>
