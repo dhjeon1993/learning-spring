@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/dao/DaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/dao/DaoFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/main/UserDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/main/UserDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/learning-spring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/main/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/main/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/springbook/user/main/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/main/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/main/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/main/App.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,13 +49,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UserDaoTest">
+  <component name="RunManager" selected="Application.UserDaoConnetionCountingTest">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="springbook.user.main.App" />
+      <module name="learning-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.user.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="springbook.user.dao.UserDao" />
       <module name="learning-spring" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="springbook.user.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoConnetionCountingTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="springbook.user.main.UserDaoConnetionCountingTest" />
+      <module name="learning-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.user.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,6 +104,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UserDaoConnetionCountingTest" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.UserDaoTest" />
         <item itemvalue="Application.UserDao" />
       </list>
@@ -99,7 +124,7 @@
       <workItem from="1569388164001" duration="1939000" />
       <workItem from="1569424426024" duration="2447000" />
       <workItem from="1569486133830" duration="19000" />
-      <workItem from="1569488635818" duration="4071000" />
+      <workItem from="1569488635818" duration="7630000" />
     </task>
     <servers />
   </component>
