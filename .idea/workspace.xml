@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/DaoFactory.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +95,7 @@
       <workItem from="1569388164001" duration="1939000" />
       <workItem from="1569424426024" duration="2447000" />
       <workItem from="1569486133830" duration="19000" />
-      <workItem from="1569488635818" duration="1531000" />
+      <workItem from="1569488635818" duration="2054000" />
     </task>
     <servers />
   </component>
