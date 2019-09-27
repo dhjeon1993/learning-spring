@@ -3,17 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/resources/config/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/resources/config/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/dao/CountingDaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/dao/CountingDaoFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/dao/DaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/dao/DaoFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/main/UserDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/main/UserDaoTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/learning-spring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/config/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/CountingDaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/CountingDaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/DaoFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/main/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/main/UserDaoTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -41,7 +32,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/spring-jdbc-3.0.7.RELEASE.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5632353" />
@@ -64,26 +55,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UserDaoTest">
+  <component name="RunManager" selected="JUnit.UserDaoTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="springbook.user.main.App" />
       <module name="learning-spring" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="springbook.user.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="springbook.user.dao.UserDao" />
-      <module name="learning-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springbook.user.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +95,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.user.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springbook.user.test" />
+      <option name="MAIN_CLASS_NAME" value="springbook.user.test.UserDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.addAndGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.user.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springbook.user.test" />
+      <option name="MAIN_CLASS_NAME" value="springbook.user.test.UserDaoTest" />
+      <option name="METHOD_NAME" value="addAndGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoTest" />
+        <item itemvalue="JUnit.UserDaoTest.addAndGet" />
         <item itemvalue="Application.UserDaoTest" />
         <item itemvalue="Application.UserDaoConnetionCountingTest" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.UserDao" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +149,7 @@
       <workItem from="1569388164001" duration="1939000" />
       <workItem from="1569424426024" duration="2447000" />
       <workItem from="1569486133830" duration="19000" />
-      <workItem from="1569488635818" duration="12915000" />
+      <workItem from="1569488635818" duration="14564000" />
     </task>
     <servers />
   </component>
