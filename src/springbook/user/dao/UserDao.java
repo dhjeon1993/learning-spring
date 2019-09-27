@@ -55,4 +55,18 @@ public class UserDao {
 
         return user;
     }
+
+    // 테이블의 모든 레코드를 삭제
+    public void deleteAll() throws SQLException {
+        Connection c = dataSource.getConnection();
+
+        PreparedStatement ps = c.prepareStatement(
+                "DELETE FROM users"
+        );
+
+        ps.executeUpdate();
+
+        ps.close();
+        c.close();
+    }
 }
