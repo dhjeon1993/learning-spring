@@ -83,7 +83,7 @@ public class UserDao {
         ResultSet rs = ps.executeQuery();
         rs.next();
 
-        int count = rs.getInt();
+        int count = rs.getInt(1);
 
         rs.close();
         ps.close();
