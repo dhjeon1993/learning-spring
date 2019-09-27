@@ -2,6 +2,7 @@ package springbook.user.main;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
 import springbook.user.dao.ConnectionMaker;
 import springbook.user.dao.DConnectionMaker;
 import springbook.user.dao.DaoFactory;
@@ -14,7 +15,10 @@ public class UserDaoTest {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         // 스프링 적용
         ApplicationContext context =
-                new AnnotationConfigApplicationContext(DaoFactory.class);
+//                new AnnotationConfigApplicationContext(DaoFactory.class);
+                new GenericXmlApplicationContext(
+                        "resources/config/applicationContext.xml"
+                );
         UserDao dao = context.getBean("userDao", UserDao.class);
 
         User user = new User();
