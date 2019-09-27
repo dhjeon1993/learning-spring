@@ -69,4 +69,26 @@ public class UserDao {
         ps.close();
         c.close();
     }
+
+    /**
+     * 테이블의 전체 레코드 수를 리턴
+     */
+    public int getCount() throws SQLException {
+        Connection c = dataSource.getConnection();
+
+        PreparedStatement ps = c.prepareStatement(
+                "SELECT COUNT(*) FROM users"
+        );
+
+        ResultSet rs = ps.executeQuery();
+        rs.next();
+
+        int count = rs.getInt();
+
+        rs.close();
+        ps.close();
+        c.close();
+
+        return count;
+    }
 }
