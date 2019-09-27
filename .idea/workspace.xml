@@ -3,9 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/resources/config/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/resources/config/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/springbook/user/dao/CountingDaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/dao/CountingDaoFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/springbook/user/dao/DaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/dao/DaoFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/springbook/user/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/dao/UserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/springbook/user/main/UserDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/main/UserDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/learning-spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/config/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/CountingDaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/CountingDaoFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/DaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springbook/user/main/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/main/UserDaoTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +41,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/spring-expression-3.0.7.RELEASE.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5632353" />
@@ -132,7 +139,7 @@
       <workItem from="1569388164001" duration="1939000" />
       <workItem from="1569424426024" duration="2447000" />
       <workItem from="1569486133830" duration="19000" />
-      <workItem from="1569488635818" duration="10017000" />
+      <workItem from="1569488635818" duration="12915000" />
     </task>
     <servers />
   </component>

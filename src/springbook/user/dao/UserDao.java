@@ -2,23 +2,20 @@ package springbook.user.dao;
 
 import springbook.user.domain.User;
 
+import javax.sql.DataSource;
 import java.sql.*;
 
 public class UserDao {
     // 관심사 분리. 독립된 클래스로 DB 연결 작업 수행
-    private ConnectionMaker connectionMaker;
+    private DataSource dataSource;
 
-//    public UserDao(ConnectionMaker connectionMaker) {
-//        this.connectionMaker = connectionMaker;
-//    }
-    // 주입 방식 변경
-    public void setConnectionMaker(ConnectionMaker connectionMaker) {
-        this.connectionMaker = connectionMaker;
+    public void setDataSource(DataSource dataSource) {
+        this.dataSource = dataSource;
     }
 
     public void add(User user) throws ClassNotFoundException, SQLException {
         // 관심사 1. 분리 완료
-        Connection c = connectionMaker.makeConnection();
+        Connection c = dataSource.getConnection();
 
         // 관심사 2.
         // SQL 쿼리를 만들고 실행
@@ -38,7 +35,7 @@ public class UserDao {
 
     public User get(String id) throws ClassNotFoundException, SQLException {
         // 관심사 1. 분리 완료
-        Connection c = connectionMaker.makeConnection();
+        Connection c = dataSource.getConnection();
 
         PreparedStatement ps = c.prepareStatement(
                 "SELECT * FROM users WHERE id = ?"
