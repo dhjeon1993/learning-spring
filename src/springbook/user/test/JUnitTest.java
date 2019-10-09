@@ -22,6 +22,13 @@ public class JUnitTest {
     @Autowired
     ApplicationContext context;
 
+    @Autowired
+    String testString1;
+    @Autowired
+    String testString2;
+    @Autowired
+    String testString3;
+
     static Set<JUnitTest> testObjects =
             new HashSet<JUnitTest>();
     static ApplicationContext contextObject = null;
@@ -33,6 +40,7 @@ public class JUnitTest {
 
         assertThat(contextObject == null || contextObject == this.context, is(true));
         contextObject = this.context;
+        System.out.println(testString1);
     }
 
     @Test
@@ -42,6 +50,7 @@ public class JUnitTest {
 
         assertTrue(contextObject == null || contextObject == this.context);
         contextObject = this.context;
+        System.out.println(testString2);
     }
 
     @Test
@@ -52,5 +61,6 @@ public class JUnitTest {
         assertThat(contextObject,
                 either(is(nullValue())).or(is(this.context)));
         contextObject = this.context;
+        System.out.println(testString3);
     }
 }
