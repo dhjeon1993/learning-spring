@@ -15,88 +15,165 @@ public class UserDao {
     }
 
     public void add(User user) throws SQLException {
-        // 관심사 1. 분리 완료
-        Connection c = dataSource.getConnection();
+        Connection c = null;
+        PreparedStatement ps = null;
 
-        // 관심사 2.
-        // SQL 쿼리를 만들고 실행
-        PreparedStatement ps = c.prepareStatement(
-                "INSERT INTO users (id, name, password) VALUES(?, ?, ?)");
-        ps.setString(1, user.getId());
-        ps.setString(2, user.getName());
-        ps.setString(3, user.getPassword());
+        try {
+            c = dataSource.getConnection();
+            ps = c.prepareStatement(
+                    "INSERT INTO users (id, name, password) VALUES(?, ?, ?)");
+            ps.setString(1, user.getId());
+            ps.setString(2, user.getName());
+            ps.setString(3, user.getPassword());
 
-        ps.executeUpdate();
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            throw e;
+        } finally {
+            if (ps != null) {
+                try {
+                    ps.close();
+                } catch (SQLException e) {
 
-        // 관심사 3.
-        // 작업을 마치고 리소스 해제
-        ps.close();
-        c.close();
+                }
+            }
+
+            if (c != null) {
+                try {
+                    c.close();
+                } catch (SQLException e) {
+
+                }
+            }
+        }
     }
 
     public User get(String id) throws SQLException {
-        // 관심사 1. 분리 완료
-        Connection c = dataSource.getConnection();
+        Connection c = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
 
-        PreparedStatement ps = c.prepareStatement(
-                "SELECT * FROM users WHERE id = ?"
-        );
+        try {
+            c = dataSource.getConnection();
+            ps = c.prepareStatement(
+                    "SELECT * FROM users WHERE id = ?"
+            );
 
-        ps.setString(1, id);
+            ps.setString(1, id);
 
-        ResultSet rs = ps.executeQuery();
+            rs = ps.executeQuery();
 
-        User user = null;
-        if (rs.next()) {
-            user = new User();
-            user.setId(rs.getString("id"));
-            user.setName(rs.getString("name"));
-            user.setPasswrod(rs.getString("password"));
+            User user = null;
+            if (rs.next()) {
+                user = new User();
+                user.setId(rs.getString("id"));
+                user.setName(rs.getString("name"));
+                user.setPasswrod(rs.getString("password"));
+            }
+
+            if (user == null) {
+                throw new EmptyResultDataAccessException(1);
+            }
+
+            return user;
+        } catch (SQLException e) {
+            throw e;
+        } finally {
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException e) {
+                }
+            }
+
+            if (ps != null) {
+                try {
+                    ps.close();
+                } catch (SQLException e) {
+                }
+            }
+
+            if (c != null) {
+                try {
+                    c.close();
+                } catch (SQLException e) {
+
+                }
+            }
         }
-
-        rs.close();
-        c.close();
-
-        if (user == null) {
-            throw new EmptyResultDataAccessException(1);
-        }
-
-        return user;
     }
 
     // 테이블의 모든 레코드를 삭제
     public void deleteAll() throws SQLException {
-        Connection c = dataSource.getConnection();
+        Connection c = null;
+        PreparedStatement ps = null;
 
-        PreparedStatement ps = c.prepareStatement(
-                "DELETE FROM users"
-        );
+        try {
+            c = dataSource.getConnection();
+            ps = c.prepareStatement(
+                    "DELETE FROM users"
+            );
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            throw e;
+        } finally {
+            if (ps != null) {
+                try {
+                    ps.close();
+                } catch (SQLException e) {
 
-        ps.executeUpdate();
+                }
+            }
 
-        ps.close();
-        c.close();
+            if (c != null) {
+                try {
+                    c.close();
+                } catch (SQLException e) {
+
+                }
+            }
+        }
     }
 
     /**
      * 테이블의 전체 레코드 수를 리턴
      */
     public int getCount() throws SQLException {
-        Connection c = dataSource.getConnection();
+        Connection c = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
 
-        PreparedStatement ps = c.prepareStatement(
-                "SELECT COUNT(*) FROM users"
-        );
+        try {
+            c = dataSource.getConnection();
 
-        ResultSet rs = ps.executeQuery();
-        rs.next();
+            ps = c.prepareStatement(
+                    "SELECT COUNT(*) FROM users"
+            );
 
-        int count = rs.getInt(1);
+            rs = ps.executeQuery();
+            rs.next();
+            return rs.getInt(1);
+        } catch (SQLException e) {
+            throw e;
+        } finally {
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException e) {}
+            }
 
-        rs.close();
-        ps.close();
-        c.close();
+            if (ps != null) {
+                try {
+                    ps.close();
+                } catch (SQLException e) {}
+            }
 
-        return count;
+            if (c != null) {
+                try {
+                    c.close();
+                } catch (SQLException e) {
+                }
+            }
+        }
     }
 }

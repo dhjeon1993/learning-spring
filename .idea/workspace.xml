@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/test/JUnitTest-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/test/JUnitTest-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/test/JUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/test/JUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JUnitTest">
+  <component name="RunManager" selected="JUnit.UserDaoTest">
     <configuration name="UserDaoConnetionCountingTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="springbook.user.main.UserDaoConnetionCountingTest" />
       <module name="learning-spring" />
@@ -133,8 +132,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JUnitTest" />
         <item itemvalue="JUnit.UserDaoTest" />
+        <item itemvalue="JUnit.JUnitTest" />
         <item itemvalue="JUnit.UserDaoTest.addAndGet" />
         <item itemvalue="Application.UserDaoTest" />
         <item itemvalue="Application.UserDaoConnetionCountingTest" />
