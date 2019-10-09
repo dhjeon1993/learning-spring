@@ -24,8 +24,7 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "/resources/config/applicationContext.xml")
-@DirtiesContext // 테스트 메소드에서 애플리케이션 컨텍스트의 구성이나 상태를 변경한다는 것을 테스트 컨텍스트 프레임워크에 알려준다.
+@ContextConfiguration(locations = "/resources/config/test-applicationContext.xml")
 public class UserDaoTest {
     @Autowired
     private UserDao dao;
@@ -39,12 +38,6 @@ public class UserDaoTest {
         user1 = new User("gyumee", "박성철", "springno1");
         user2 = new User("leegw700", "이길원", "springno2");
         user3 = new User("bumjin", "박범진", "springno3");
-
-        // 테스트에서 UserDao가 사용할 DataSource 오브젝트를 직접 생성한다.
-        DataSource dataSource = new SingleConnectionDataSource(
-                "jdbc:mysql://localhost/testdb", "spring", "book", true
-        );
-        dao.setDataSource(dataSource);
     }
 
     @Test
