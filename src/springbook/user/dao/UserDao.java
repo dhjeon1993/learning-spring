@@ -7,15 +7,21 @@ import javax.sql.DataSource;
 import java.sql.*;
 
 public class UserDao {
-    // 관심사 분리. 독립된 클래스로 DB 연결 작업 수행
     private DataSource dataSource;
 
     public void setDataSource(DataSource dataSource) {
         this.dataSource = dataSource;
     }
 
+    //JdbcContext DI
+    private JdbcContext jdbcContext;
+
+    public void setJdbcContext(JdbcContext jdbcContext) {
+        this.jdbcContext = jdbcContext;
+    }
+
     public void add(final User user) throws SQLException {
-        jdbcContextWithStatementStrategy(new StatementStrategy() {
+        this.jdbcContext.workWithStatementStrategy(new StatementStrategy() {
             @Override
             public PreparedStatement makePreparedStatement(Connection c) throws SQLException {
                 PreparedStatement ps =
@@ -90,7 +96,7 @@ public class UserDao {
     // 테이블의 모든 레코드를 삭제
     public void deleteAll() throws SQLException {
         // 전략 패턴으로 분리
-        jdbcContextWithStatementStrategy(new StatementStrategy() {
+        this.jdbcContext.workWithStatementStrategy(new StatementStrategy() {
             @Override
             public PreparedStatement makePreparedStatement(Connection c) throws SQLException {
                 PreparedStatement ps = c.prepareStatement(
@@ -140,24 +146,6 @@ public class UserDao {
                 } catch (SQLException e) {
                 }
             }
-        }
-    }
-
-    public void jdbcContextWithStatementStrategy(StatementStrategy stmt) throws SQLException {
-        Connection c = null;
-        PreparedStatement ps = null;
-
-        try {
-            c = dataSource.getConnection();
-
-            ps = stmt.makePreparedStatement(c);
-
-            ps.executeUpdate();
-        } catch (SQLException e) {
-            throw e;
-        } finally {
-            if (ps != null) {try {ps.close();} catch (SQLException e) {}}
-            if (c != null) {try {c.close();} catch (SQLException e) {}}
         }
     }
 }

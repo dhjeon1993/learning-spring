@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/AddStatement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -155,7 +156,7 @@
       <workItem from="1569424426024" duration="2447000" />
       <workItem from="1569486133830" duration="19000" />
       <workItem from="1569488635818" duration="21359000" />
-      <workItem from="1570668951830" duration="1399000" />
+      <workItem from="1570668951830" duration="5080000" />
     </task>
     <servers />
   </component>
