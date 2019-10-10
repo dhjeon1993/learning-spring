@@ -11,14 +11,14 @@ public class UserDao {
 
     public void setDataSource(DataSource dataSource) {
         this.dataSource = dataSource;
+
+        this.jdbcContext = new JdbcContext();
+
+        this.jdbcContext.setDataSource(dataSource);
     }
 
     //JdbcContext DI
     private JdbcContext jdbcContext;
-
-    public void setJdbcContext(JdbcContext jdbcContext) {
-        this.jdbcContext = jdbcContext;
-    }
 
     public void add(final User user) throws SQLException {
         this.jdbcContext.workWithStatementStrategy(new StatementStrategy() {
