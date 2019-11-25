@@ -94,17 +94,6 @@ public class UserDao {
      * 테이블의 전체 레코드 수를 리턴
      */
     public int getCount() throws SQLException {
-        return this.jdbcTemplate.query(new PreparedStatementCreator() {
-            @Override
-            public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
-                return connection.prepareStatement("SELECT COUNT(*) FROM users");
-            }
-        }, new ResultSetExtractor<Integer>() {
-            @Override
-            public Integer extractData(ResultSet resultSet) throws SQLException, DataAccessException {
-                resultSet.next();
-                return resultSet.getInt(1);
-            }
-        });
+        return this.jdbcTemplate.queryForInt("SELECT COUNT(*) FROM users");
     }
 }

@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/springbook/user/dao/UserDao$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/springbook/user/dao/UserDao$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/springbook/user/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/dao/UserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
