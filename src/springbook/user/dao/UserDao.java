@@ -13,13 +13,21 @@ import java.sql.*;
 import java.util.List;
 
 public class UserDao {
-    private DataSource dataSource;
-
     private JdbcTemplate jdbcTemplate;
 
-    public void setDataSource(DataSource dataSource) {
-        this.dataSource = dataSource;
+    private RowMapper<User> userMapper =
+            new RowMapper<User>() {
+                @Override
+                public User mapRow(ResultSet resultSet, int i) throws SQLException {
+                    User user = new User();
+                    user.setId(resultSet.getString("id"));
+                    user.setName(resultSet.getString("name"));
+                    user.setPasswrod(resultSet.getString("password"));
+                    return user;
+                }
+            };
 
+    public void setDataSource(DataSource dataSource) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
@@ -36,16 +44,7 @@ public class UserDao {
         return this.jdbcTemplate.queryForObject(
                 "SELECT * FROM users WHERE id = ?",
                 new Object[] {id},
-                new RowMapper<User>() {
-                    @Override
-                    public User mapRow(ResultSet resultSet, int i) throws SQLException {
-                        User user = new User();
-                        user.setId(resultSet.getString("id"));
-                        user.setName(resultSet.getString("name"));
-                        user.setPasswrod(resultSet.getString("password"));
-                        return user;
-                    }
-                }
+                userMapper
         );
     }
 
@@ -67,16 +66,7 @@ public class UserDao {
     public List<User> getAll() {
         return this.jdbcTemplate.query(
                 "SELECT * FROM users ORDER BY id",
-                new RowMapper<User>() {
-                    @Override
-                    public User mapRow(ResultSet resultSet, int i) throws SQLException {
-                        User user = new User();
-                        user.setId(resultSet.getString("id"));
-                        user.setName(resultSet.getString("name"));
-                        user.setPasswrod(resultSet.getString("password"));
-                        return user;
-                    }
-                }
+                userMapper
         );
     }
 }
