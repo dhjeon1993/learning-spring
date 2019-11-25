@@ -1,6 +1,8 @@
 package springbook.user.dao;
 
 import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementCreator;
 import springbook.user.domain.User;
 
 import javax.sql.DataSource;
@@ -9,33 +11,21 @@ import java.sql.*;
 public class UserDao {
     private DataSource dataSource;
 
+    private JdbcTemplate jdbcTemplate;
+
     public void setDataSource(DataSource dataSource) {
         this.dataSource = dataSource;
 
-        this.jdbcContext = new JdbcContext();
-
-        this.jdbcContext.setDataSource(dataSource);
+        this.jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
-    //JdbcContext DI
-    private JdbcContext jdbcContext;
-
     public void add(final User user) throws SQLException {
-        this.jdbcContext.workWithStatementStrategy(new StatementStrategy() {
-            @Override
-            public PreparedStatement makePreparedStatement(Connection c) throws SQLException {
-                PreparedStatement ps =
-                        c.prepareStatement(
-                                "INSERT INTO users(id, name, password)" +
-                                        "VALUES(?, ?, ?)"
-                        );
-                ps.setString(1, user.getId());
-                ps.setString(2, user.getName());
-                ps.setString(3, user.getPassword());
-
-                return ps;
-            }
-        });
+        this.jdbcTemplate.update("INSERT INTO users(id, name, password)" +
+                "VALUES (?, ?, ?)"
+                , user.getId()
+                , user.getName()
+                , user.getPassword()
+        );
     }
 
     public User get(String id) throws SQLException {
@@ -95,8 +85,7 @@ public class UserDao {
 
     // 테이블의 모든 레코드를 삭제
     public void deleteAll() throws SQLException {
-        // 변하지 않는 부분을 분리
-        jdbcContext.executeSql("DELETE FROM users");
+        this.jdbcTemplate.update("DELETE FROM users");
     }
 
     /**
