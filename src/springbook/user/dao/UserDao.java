@@ -5,6 +5,7 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.ResultSetExtractor;
+import org.springframework.jdbc.core.RowMapper;
 import springbook.user.domain.User;
 
 import javax.sql.DataSource;
@@ -31,58 +32,20 @@ public class UserDao {
     }
 
     public User get(String id) throws SQLException {
-        Connection c = null;
-        PreparedStatement ps = null;
-        ResultSet rs = null;
-
-        try {
-            c = dataSource.getConnection();
-            ps = c.prepareStatement(
-                    "SELECT * FROM users WHERE id = ?"
-            );
-
-            ps.setString(1, id);
-
-            rs = ps.executeQuery();
-
-            User user = null;
-            if (rs.next()) {
-                user = new User();
-                user.setId(rs.getString("id"));
-                user.setName(rs.getString("name"));
-                user.setPasswrod(rs.getString("password"));
-            }
-
-            if (user == null) {
-                throw new EmptyResultDataAccessException(1);
-            }
-
-            return user;
-        } catch (SQLException e) {
-            throw e;
-        } finally {
-            if (rs != null) {
-                try {
-                    rs.close();
-                } catch (SQLException e) {
+        return this.jdbcTemplate.queryForObject(
+                "SELECT * FROM users WHERE id = ?",
+                new Object[] {id},
+                new RowMapper<User>() {
+                    @Override
+                    public User mapRow(ResultSet resultSet, int i) throws SQLException {
+                        User user = new User();
+                        user.setId(resultSet.getString("id"));
+                        user.setName(resultSet.getString("name"));
+                        user.setPasswrod(resultSet.getString("password"));
+                        return user;
+                    }
                 }
-            }
-
-            if (ps != null) {
-                try {
-                    ps.close();
-                } catch (SQLException e) {
-                }
-            }
-
-            if (c != null) {
-                try {
-                    c.close();
-                } catch (SQLException e) {
-
-                }
-            }
-        }
+        );
     }
 
     // 테이블의 모든 레코드를 삭제
