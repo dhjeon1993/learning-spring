@@ -95,16 +95,8 @@ public class UserDao {
 
     // 테이블의 모든 레코드를 삭제
     public void deleteAll() throws SQLException {
-        // 전략 패턴으로 분리
-        this.jdbcContext.workWithStatementStrategy(new StatementStrategy() {
-            @Override
-            public PreparedStatement makePreparedStatement(Connection c) throws SQLException {
-                PreparedStatement ps = c.prepareStatement(
-                        "DELETE FROM users"
-                );
-                return ps;
-            }
-        });
+        // 변하지 않는 부분을 분리
+        jdbcContext.executeSql("DELETE FROM users");
     }
 
     /**

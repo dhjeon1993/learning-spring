@@ -29,4 +29,16 @@ public class JdbcContext {
             if (c != null) {try {c.close();} catch (SQLException e) {}}
         }
     }
+
+    public void executeSql(final String query) throws SQLException {
+        // 전략 패턴으로 분리리
+        this.workWithStatementStrategy(
+                new StatementStrategy() {
+                    @Override
+                    public PreparedStatement makePreparedStatement(Connection c) throws SQLException {
+                        return c.prepareStatement(query);
+                    }
+                }
+        );
+    }
 }
