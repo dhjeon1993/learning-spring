@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/JdbcContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/JdbcContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/springbook/user/test/UserDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/test/UserDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/test/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/test/UserDaoTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +40,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\learning-spring\src\springbook\learningtest\template" />
+      <recent name="D:\Projects\learning-spring\src" />
       <recent name="D:\Projects\learning-spring\src\springbook\user\test" />
       <recent name="C:\dev\learning-spring\src" />
     </key>
@@ -59,29 +61,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest">
-    <configuration name="UserDaoConnetionCountingTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="springbook.user.main.UserDaoConnetionCountingTest" />
+  <component name="RunManager" selected="JUnit.CalcSumTest.sumOfNumbers">
+    <configuration name="CalcSumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="springbook.user.main.*" />
+          <option name="PATTERN" value="springbook.learningtest.template.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="springbook.learningtest.template" />
+      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.template.CalcSumTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="springbook.user.main.UserDaoTest" />
+    <configuration name="CalcSumTest.sumOfNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="springbook.user.main.*" />
+          <option name="PATTERN" value="springbook.learningtest.template.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="springbook.learningtest.template" />
+      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.template.CalcSumTest" />
+      <option name="METHOD_NAME" value="sumOfNumbers" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalcSumTest.sumOfNumbers" />
+        <item itemvalue="JUnit.CalcSumTest" />
         <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="JUnit.JUnitTest" />
         <item itemvalue="JUnit.UserDaoTest.addAndGet" />
-        <item itemvalue="Application.UserDaoTest" />
-        <item itemvalue="Application.UserDaoConnetionCountingTest" />
       </list>
     </recent_temporary>
   </component>
