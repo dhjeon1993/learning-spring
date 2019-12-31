@@ -1,13 +1,8 @@
 package springbook.user.main;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
-import org.springframework.test.annotation.DirtiesContext;
-import springbook.user.dao.ConnectionMaker;
-import springbook.user.dao.DConnectionMaker;
-import springbook.user.dao.DaoFactory;
-import springbook.user.dao.UserDao;
+import springbook.user.dao.UserDaoJdbc;
 import springbook.user.domain.User;
 
 import java.sql.SQLException;
@@ -21,7 +16,7 @@ public class UserDaoTest {
                         "resources/config/applicationContext.xml"
                 );
 
-        UserDao dao = context.getBean("userDao", UserDao.class);
+        UserDaoJdbc dao = context.getBean("userDao", UserDaoJdbc.class);
 
         User user = new User();
         user.setId("whiteship");
