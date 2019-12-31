@@ -3,28 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/learningtest/template/BufferedReaderCallback.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/learningtest/template/BufferedReaderCallback.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/learningtest/template/CalcSumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/learningtest/template/CalcSumTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/learningtest/template/Calculator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/learningtest/template/Calculator$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/learningtest/template/Calculator$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/learningtest/template/Calculator$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/learningtest/template/Calculator$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/learningtest/template/Calculator$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/learningtest/template/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/learningtest/template/Calculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/learningtest/template/LineCallback.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/learningtest/template/LineCallback.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/dao/ConnectionMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/dao/ConnectionMaker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/dao/CountingConnectionMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/dao/CountingConnectionMaker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/dao/CountingDaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/dao/CountingDaoFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/dao/DConnectionMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/dao/DConnectionMaker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/dao/DaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/dao/DaoFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/dao/DeleteAllStatement.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/dao/DeleteAllStatement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/dao/StatementStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/dao/StatementStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/main/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/main/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/main/UserDaoConnetionCountingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/main/UserDaoConnetionCountingTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/main/UserDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/main/UserDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/test/JUnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/test/JUnitTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/springbook/user/test/UserDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/springbook/user/test/UserDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +178,7 @@
       <workItem from="1570668951830" duration="5906000" />
       <workItem from="1574956188942" duration="128000" />
       <workItem from="1577182098648" duration="664000" />
-      <workItem from="1577771900589" duration="1533000" />
+      <workItem from="1577771900589" duration="1638000" />
     </task>
     <servers />
   </component>
