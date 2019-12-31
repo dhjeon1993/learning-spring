@@ -49,7 +49,7 @@ public class UserDao {
     }
 
     // 테이블의 모든 레코드를 삭제
-    public void deleteAll() throws SQLException {
+    public void deleteAll() {
         this.jdbcTemplate.update("DELETE FROM users");
     }
 
