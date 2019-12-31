@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/config/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/CountingDaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/CountingDaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDaoJdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/main/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/main/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/main/UserDaoConnetionCountingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/main/UserDaoConnetionCountingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/main/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/main/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/test/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/test/UserDaoTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest">
+  <component name="RunManager" selected="JUnit.UserDaoTest.sqlExceptionTranslate">
     <configuration name="CalcSumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -92,37 +85,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="springbook.learningtest.template" />
       <option name="MAIN_CLASS_NAME" value="springbook.learningtest.template.CalcSumTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalcSumTest.sumOfNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learning-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springbook.learningtest.template.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="springbook.learningtest.template" />
-      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.template.CalcSumTest" />
-      <option name="METHOD_NAME" value="sumOfNumbers" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learning-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springbook.user.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="springbook.user.test" />
-      <option name="MAIN_CLASS_NAME" value="springbook.user.test.JUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,6 +105,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserDaoTest.duplicateKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.user.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springbook.user.test" />
+      <option name="MAIN_CLASS_NAME" value="springbook.user.test.UserDaoTest" />
+      <option name="METHOD_NAME" value="duplicateKey" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserDaoTest.getUserFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -159,13 +137,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserDaoTest.sqlExceptionTranslate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.user.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springbook.user.test" />
+      <option name="MAIN_CLASS_NAME" value="springbook.user.test.UserDaoTest" />
+      <option name="METHOD_NAME" value="sqlExceptionTranslate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoTest.sqlExceptionTranslate" />
+        <item itemvalue="JUnit.UserDaoTest.duplicateKey" />
         <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="JUnit.UserDaoTest.getUserFailure" />
         <item itemvalue="JUnit.CalcSumTest" />
-        <item itemvalue="JUnit.CalcSumTest.sumOfNumbers" />
-        <item itemvalue="JUnit.JUnitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +180,7 @@
       <workItem from="1570668951830" duration="5906000" />
       <workItem from="1574956188942" duration="128000" />
       <workItem from="1577182098648" duration="664000" />
-      <workItem from="1577771900589" duration="3806000" />
+      <workItem from="1577771900589" duration="4899000" />
     </task>
     <servers />
   </component>
