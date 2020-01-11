@@ -6,6 +6,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.jdbc.core.RowMapper;
+import springbook.user.domain.Level;
 import springbook.user.domain.User;
 import springbook.user.exceptions.DuplicateUserIdException;
 
@@ -24,6 +25,9 @@ public class UserDaoJdbc implements UserDao{
                     user.setId(resultSet.getString("id"));
                     user.setName(resultSet.getString("name"));
                     user.setPasswrod(resultSet.getString("password"));
+                    user.setLevel(Level.valueOf(resultSet.getInt("level")));
+                    user.setLogin(resultSet.getInt("login"));
+                    user.setRecommend(resultSet.getInt("recommend"));
                     return user;
                 }
             };
@@ -33,11 +37,14 @@ public class UserDaoJdbc implements UserDao{
     }
 
     public void add(final User user) {
-        this.jdbcTemplate.update("INSERT INTO users(id, name, password)" +
-                        "VALUES (?, ?, ?)"
+        this.jdbcTemplate.update("INSERT INTO users(id, name, password, level, login, recommend)" +
+                        "VALUES (?, ?, ?, ?, ?, ?)"
                 , user.getId()
                 , user.getName()
                 , user.getPassword()
+                , user.getLevel().intValue()
+                , user.getLogin()
+                , user.getRecommend()
         );
     }
 
@@ -68,6 +75,16 @@ public class UserDaoJdbc implements UserDao{
         return this.jdbcTemplate.query(
                 "SELECT * FROM users ORDER BY id",
                 userMapper
+        );
+    }
+
+    @Override
+    public void update(User user) {
+        this.jdbcTemplate.update(
+                "UPDATE users SET name = ?, password = ?, level = ?, login = ?, "
+                + "recommend = ? where id = ? ", user.getName(), user.getPassword()
+                , user.getLevel().intValue(), user.getLogin(), user.getRecommend(),
+                user.getId()
         );
     }
 }

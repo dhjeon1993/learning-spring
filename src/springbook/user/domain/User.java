@@ -17,11 +17,15 @@ public class User {
         this.name = name;
         this.password = password;
         this.level = Level.BASIC;
+        this.login = 0;
+        this.recommend = 0;
     }
 
-    public User(String id, String name, String password, Level level) {
+    public User(String id, String name, String password, Level level, int login, int recommend) {
         this(id, name, password);
         this.setLevel(level);
+        this.setLogin(login);
+        this.setRecommend(recommend);
     }
 
     public String getId() {
@@ -51,4 +55,12 @@ public class User {
     public Level getLevel() {return this.level;}
 
     public void setLevel(Level level) { this.level = level; }
+
+    public int getLogin() { return login; }
+
+    public void setLogin(int login) { this.login = login; }
+
+    public int getRecommend() { return recommend; }
+
+    public void setRecommend(int recommend) { this.recommend = recommend; }
 }
