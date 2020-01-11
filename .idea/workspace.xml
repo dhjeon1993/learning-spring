@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/test/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/test/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/config/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest.update">
+  <component name="RunManager" selected="JUnit.UserServiceTest.bean">
     <configuration name="SemaphoreTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="springbook.user.test.SemaphoreTest" />
       <module name="learning-spring" />
@@ -118,22 +120,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest.sqlExceptionTranslate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learning-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springbook.user.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="springbook.user.test" />
-      <option name="MAIN_CLASS_NAME" value="springbook.user.test.UserDaoTest" />
-      <option name="METHOD_NAME" value="sqlExceptionTranslate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserDaoTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -150,13 +136,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceTest.bean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.user.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springbook.user.service" />
+      <option name="MAIN_CLASS_NAME" value="springbook.user.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="bean" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest.bean" />
         <item itemvalue="JUnit.UserDaoTest.update" />
         <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="Application.SemaphoreTest" />
         <item itemvalue="JUnit.SemaphoreTest.semTest" />
-        <item itemvalue="JUnit.UserDaoTest.sqlExceptionTranslate" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +182,7 @@
       <workItem from="1577771900589" duration="5646000" />
       <workItem from="1578010625388" duration="866000" />
       <workItem from="1578314334853" duration="2090000" />
-      <workItem from="1578757299187" duration="3507000" />
+      <workItem from="1578757299187" duration="4084000" />
     </task>
     <servers />
   </component>
