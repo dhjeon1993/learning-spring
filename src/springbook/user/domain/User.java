@@ -1,14 +1,12 @@
 package springbook.user.domain;
 
 public class User {
-    private static final int BASIC = 1;
-    private static final int SILVER = 2;
-    private static final int GOLD = 3;
-
     String id;
     String name;
     String password;
-    int level;
+    Level level;
+    int login;
+    int recommend;
 
     public User() {
 
@@ -18,10 +16,10 @@ public class User {
         this.id = id;
         this.name = name;
         this.password = password;
-        this.level = BASIC;
+        this.level = Level.BASIC;
     }
 
-    public User(String id, String name, String password, int level) {
+    public User(String id, String name, String password, Level level) {
         this(id, name, password);
         this.setLevel(level);
     }
@@ -50,7 +48,7 @@ public class User {
         this.password = password;
     }
 
-    public int getLevel() {return this.level;}
+    public Level getLevel() {return this.level;}
 
-    public void setLevel(int level) { this.level = level; }
+    public void setLevel(Level level) { this.level = level; }
 }
