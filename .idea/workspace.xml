@@ -75,7 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest">
+  <component name="RunManager" selected="JUnit.UserServiceTest.upgradeAllOrNothing">
     <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -107,7 +107,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.bean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceTest.upgradeAllOrNothing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
         <pattern>
@@ -117,7 +117,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="springbook.user.service" />
       <option name="MAIN_CLASS_NAME" value="springbook.user.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="bean" />
+      <option name="METHOD_NAME" value="upgradeAllOrNothing" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest.upgradeAllOrNothing" />
         <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.add" />
         <item itemvalue="JUnit.UserServiceTest.upgradeLevels" />
-        <item itemvalue="JUnit.UserServiceTest.bean" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +184,7 @@
       <workItem from="1577771900589" duration="5646000" />
       <workItem from="1578010625388" duration="866000" />
       <workItem from="1578314334853" duration="2090000" />
-      <workItem from="1578757299187" duration="7409000" />
+      <workItem from="1578757299187" duration="9642000" />
     </task>
     <servers />
   </component>
