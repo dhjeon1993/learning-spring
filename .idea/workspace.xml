@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/domain/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/domain/Level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/UserService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,23 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
-    <configuration name="UserDaoTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learning-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springbook.user.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="springbook.user.test" />
-      <option name="MAIN_CLASS_NAME" value="springbook.user.test.UserDaoTest" />
-      <option name="METHOD_NAME" value="update" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserTest">
     <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -156,13 +137,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.user.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springbook.user.service" />
+      <option name="MAIN_CLASS_NAME" value="springbook.user.service.UserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.add" />
         <item itemvalue="JUnit.UserServiceTest.upgradeLevels" />
         <item itemvalue="JUnit.UserServiceTest.bean" />
-        <item itemvalue="JUnit.UserDaoTest.update" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +182,7 @@
       <workItem from="1577771900589" duration="5646000" />
       <workItem from="1578010625388" duration="866000" />
       <workItem from="1578314334853" duration="2090000" />
-      <workItem from="1578757299187" duration="6309000" />
+      <workItem from="1578757299187" duration="6846000" />
     </task>
     <servers />
   </component>
