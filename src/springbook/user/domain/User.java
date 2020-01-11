@@ -12,20 +12,13 @@ public class User {
 
     }
 
-    public User(String id, String name, String password) {
+    public User(String id, String name, String password, Level level, int login, int recommend) {
         this.id = id;
         this.name = name;
         this.password = password;
-        this.level = Level.BASIC;
-        this.login = 0;
-        this.recommend = 0;
-    }
-
-    public User(String id, String name, String password, Level level, int login, int recommend) {
-        this(id, name, password);
-        this.setLevel(level);
-        this.setLogin(login);
-        this.setRecommend(recommend);
+        this.level = level;
+        this.login = login;
+        this.recommend = recommend;
     }
 
     public String getId() {

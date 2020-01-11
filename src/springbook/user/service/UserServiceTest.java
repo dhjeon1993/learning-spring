@@ -21,7 +21,7 @@ import static org.hamcrest.CoreMatchers.is;
 @ContextConfiguration(locations="/resources/config/test-applicationContext.xml")
 public class UserServiceTest {
     @Autowired
-    UserService userSerivce;
+    UserService userService;
 
     @Autowired
     UserDao userDao;
@@ -41,7 +41,7 @@ public class UserServiceTest {
 
     @Test
     public void bean() {
-        assertThat(this.userSerivce, is(notNullValue()));
+        assertThat(this.userService, is(notNullValue()));
     }
 
     @Test
@@ -51,13 +51,31 @@ public class UserServiceTest {
             userDao.add(user);
         }
 
-        userSerivce.upgradeLevels();
+        userService.upgradeLevels();
 
         checkLevel(users.get(0), Level.BASIC);
         checkLevel(users.get(1), Level.SILVER);
         checkLevel(users.get(2), Level.SILVER);
         checkLevel(users.get(3), Level.GOLD);
         checkLevel(users.get(4), Level.GOLD);
+    }
+
+    @Test
+    public void add() {
+        userDao.deleteAll();
+
+        User userWithLevel = users.get(4);
+        User userWithoutLevel = users.get(0);
+        userWithoutLevel.setLevel(null);
+
+        userService.add(userWithLevel);
+        userService.add(userWithoutLevel);
+
+        User userWithLevelRead = userDao.get(userWithLevel.getId());
+        User userWithoutLevelRead = userDao.get(userWithoutLevel.getId());
+
+        assertThat(userWithLevelRead.getLevel(), is(userWithLevel.getLevel()));
+        assertThat(userWithoutLevelRead.getLevel(), is(userWithoutLevel.getLevel()));
     }
 
     private void checkLevel(User user, Level expectedLevel) {
