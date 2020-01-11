@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/test/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/test/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/domain/User.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -74,18 +74,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest.sqlExceptionTranslate">
-    <configuration name="CalcSumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.SemaphoreTest">
+    <configuration name="SemaphoreTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="springbook.user.test.SemaphoreTest" />
       <module name="learning-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="springbook.learningtest.template.*" />
+          <option name="PATTERN" value="springbook.user.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="springbook.learningtest.template" />
-      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.template.CalcSumTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SemaphoreTest.semTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.user.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springbook.user.test" />
+      <option name="MAIN_CLASS_NAME" value="springbook.user.test.SemaphoreTest" />
+      <option name="METHOD_NAME" value="semTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,22 +135,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest.getUserFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learning-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springbook.user.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="springbook.user.test" />
-      <option name="MAIN_CLASS_NAME" value="springbook.user.test.UserDaoTest" />
-      <option name="METHOD_NAME" value="getUserFailure" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserDaoTest.sqlExceptionTranslate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -155,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SemaphoreTest" />
+        <item itemvalue="JUnit.SemaphoreTest.semTest" />
         <item itemvalue="JUnit.UserDaoTest.sqlExceptionTranslate" />
         <item itemvalue="JUnit.UserDaoTest.duplicateKey" />
         <item itemvalue="JUnit.UserDaoTest" />
-        <item itemvalue="JUnit.UserDaoTest.getUserFailure" />
-        <item itemvalue="JUnit.CalcSumTest" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +178,10 @@
       <workItem from="1570668951830" duration="5906000" />
       <workItem from="1574956188942" duration="128000" />
       <workItem from="1577182098648" duration="664000" />
-      <workItem from="1577771900589" duration="4899000" />
+      <workItem from="1577771900589" duration="5646000" />
+      <workItem from="1578010625388" duration="866000" />
+      <workItem from="1578314334853" duration="2090000" />
+      <workItem from="1578757299187" duration="808000" />
     </task>
     <servers />
   </component>
