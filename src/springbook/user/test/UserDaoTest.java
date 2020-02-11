@@ -139,7 +139,7 @@ public class UserDaoTest {
         dao.add(user2); // 수정하지 않을 사용자
 
         user1.setName("오민규");
-        user1.setPasswrod("springno6");
+        user1.setPassword("springno6");
         user1.setLevel(Level.GOLD);
         user1.setLogin(1000);
         user1.setRecommend(999);

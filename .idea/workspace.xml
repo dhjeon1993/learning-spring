@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/learning-spring.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/config/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDaoJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDaoJdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/main/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/main/UserDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/test/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/test/UserDaoTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +51,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/spring-context-support-3.0.7.RELEASE.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5632353" />
@@ -188,6 +190,7 @@
       <workItem from="1578010625388" duration="866000" />
       <workItem from="1578314334853" duration="2090000" />
       <workItem from="1578757299187" duration="13939000" />
+      <workItem from="1581418801078" duration="1832000" />
     </task>
     <servers />
   </component>
