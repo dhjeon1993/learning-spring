@@ -4,7 +4,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.MailException;
 import org.springframework.mail.MailSender;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -12,7 +15,7 @@ import springbook.user.dao.UserDao;
 import springbook.user.domain.Level;
 import springbook.user.domain.User;
 
-import javax.sql.DataSource;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -20,14 +23,17 @@ import static org.hamcrest.core.IsNull.notNullValue;
 import static org.junit.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.fail;
-import static springbook.user.service.UserService.MIN_LOGCOUNT_FOR_SILVER;
-import static springbook.user.service.UserService.MIN_RECOMMEND_FOR_GOLD;
+import static springbook.user.service.UserServiceImpl.MIN_LOGCOUNT_FOR_SILVER;
+import static springbook.user.service.UserServiceImpl.MIN_RECOMMEND_FOR_GOLD;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations="/resources/config/test-applicationContext.xml")
 public class UserServiceTest {
     @Autowired
     UserService userService;
+
+    @Autowired
+    UserServiceImpl userServiceImpl;
 
     @Autowired
     PlatformTransactionManager transactionManager;
@@ -57,11 +63,15 @@ public class UserServiceTest {
     }
 
     @Test
-    public void upgradeLevels() {
+    @DirtiesContext
+    public void upgradeLevels() throws Exception {
         userDao.deleteAll();
         for(User user : users) {
             userDao.add(user);
         }
+
+        MockMailSender mockMailSender = new MockMailSender();
+        userServiceImpl.setMailSender(mockMailSender);
 
         userService.upgradeLevels();
 
@@ -70,6 +80,11 @@ public class UserServiceTest {
         checkLevelUpgraded(users.get(2), false);
         checkLevelUpgraded(users.get(3), true);
         checkLevelUpgraded(users.get(4), false);
+
+        List<String> request = mockMailSender.getRequests();
+        assertThat(request.size(), is(2));
+        assertThat(request.get(0), is(users.get(1).getEmail()));
+        assertThat(request.get(1), is(users.get(3).getEmail()));
     }
 
     @Test
@@ -101,17 +116,21 @@ public class UserServiceTest {
 
     @Test
     public void upgradeAllOrNothing() {
-        UserService testUserService = new TestUserService(users.get(3).getId());
+        UserServiceImpl testUserService = new TestUserService(users.get(3).getId());
         testUserService.setUserDao(this.userDao);
-        testUserService.setTransactionManager(transactionManager);
         testUserService.setMailSender(this.mailSender);
+
+        UserServiceTx txUserService = new UserServiceTx();
+        txUserService.setTransactionManager(this.transactionManager);
+        txUserService.setUserService(testUserService);
+
         userDao.deleteAll();
         for (User user : users) {
             userDao.add(user);
         }
 
         try {
-            testUserService.upgradeLevels();
+            txUserService.upgradeLevels();
             fail("TestUserServiceException expected");
         } catch (TestUserServiceException e) {
 
@@ -120,7 +139,7 @@ public class UserServiceTest {
         checkLevelUpgraded(users.get(1), false);
     }
 
-    static class TestUserService extends UserService {
+    static class TestUserService extends UserServiceImpl {
         private String id;
 
         private TestUserService(String id) {
@@ -134,4 +153,20 @@ public class UserServiceTest {
     }
 
     static class TestUserServiceException extends RuntimeException {}
+
+    static class MockMailSender implements MailSender {
+        private List<String> requests = new ArrayList<String>();
+
+        public List<String> getRequests() {
+            return requests;
+        }
+
+        public void send(SimpleMailMessage mailMessage) throws MailException {
+            requests.add(mailMessage.getTo()[0]);
+        }
+
+        public void send(SimpleMailMessage[] mailMessage) throws MailException {
+
+        }
+    }
 }
