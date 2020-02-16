@@ -45,7 +45,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/mockito-all-1.10.19.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5632353" />
@@ -74,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.upgradeLevels">
+  <component name="RunManager" selected="JUnit.UserServiceTest.mockUpgradeLevels">
     <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -90,7 +90,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceTest.mockUpgradeLevels" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
         <pattern>
@@ -100,7 +100,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="springbook.user.service" />
       <option name="MAIN_CLASS_NAME" value="springbook.user.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="add" />
+      <option name="METHOD_NAME" value="mockUpgradeLevels" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest.mockUpgradeLevels" />
         <item itemvalue="JUnit.UserServiceTest.upgradeLevels" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.UserServiceTest.upgradeAllOrNothing" />
-        <item itemvalue="JUnit.UserServiceTest.add" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +187,8 @@
       <workItem from="1581418801078" duration="2261000" />
       <workItem from="1581466352333" duration="4333000" />
       <workItem from="1581551652353" duration="354000" />
-      <workItem from="1581661218656" duration="6327000" />
+      <workItem from="1581661218656" duration="7880000" />
+      <workItem from="1581895077915" duration="1570000" />
     </task>
     <servers />
   </component>
