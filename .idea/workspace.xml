@@ -73,7 +73,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReflectionTest.invokeMethod">
+  <component name="RunManager" selected="JUnit.HelloTest.simpleProxy">
+    <configuration name="HelloTest.simpleProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.learningtest.proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springbook.learningtest.proxy" />
+      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.proxy.HelloTest" />
+      <option name="METHOD_NAME" value="simpleProxy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReflectionTest.invokeMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -137,28 +153,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learning-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springbook.user.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="springbook.user.service" />
-      <option name="MAIN_CLASS_NAME" value="springbook.user.service.UserTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HelloTest.simpleProxy" />
         <item itemvalue="JUnit.ReflectionTest.invokeMethod" />
         <item itemvalue="JUnit.UserServiceTest.mockUpgradeLevels" />
         <item itemvalue="JUnit.UserServiceTest.upgradeLevels" />
         <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="JUnit.UserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +188,8 @@
       <workItem from="1581466352333" duration="4333000" />
       <workItem from="1581551652353" duration="354000" />
       <workItem from="1581661218656" duration="7880000" />
-      <workItem from="1581895077915" duration="3119000" />
+      <workItem from="1581895077915" duration="5044000" />
+      <workItem from="1581921443445" duration="1814000" />
     </task>
     <servers />
   </component>
