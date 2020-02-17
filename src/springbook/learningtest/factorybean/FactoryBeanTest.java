@@ -22,4 +22,10 @@ public class FactoryBeanTest {
         assertThat(message, is(Message.class));
         assertThat(((Message)message).getText(), is("Factory Bean"));
     }
+
+    @Test
+    public void getFactoryBean() throws Exception {
+        Object factory = context.getBean("&message");
+        assertThat(factory, is(MessageFactoryBean.class));
+    }
 }

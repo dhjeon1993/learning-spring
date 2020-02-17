@@ -15,9 +15,11 @@
         <property name="mailSender" ref="mailSender"/>
     </bean>
 
-    <bean id="userService" class="springbook.user.service.UserServiceTx">
-        <property name="transactionManager" ref="transactionManager" />
-        <property name="userService" ref="userServiceImpl"/>
+    <bean id="userService" class="springbook.user.service.TxProxyFactoryBean">
+        <property name="target" ref="userServiceImpl"/>
+        <property name="transactionManager" ref="transactionManager"/>
+        <property name="pattern" value="upgradeLevels"/>
+        <property name="serviceInterface" value="springbook.user.service.UserService"/>
     </bean>
 
     <bean id="userDao" class="springbook.user.dao.UserDaoJdbc">
