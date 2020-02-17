@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HelloTest.simpleProxy">
+  <component name="RunManager" selected="JUnit.UserServiceTest.upgradeAllOrNothing">
     <configuration name="HelloTest.simpleProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -137,7 +138,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.upgradeLevels" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceTest.upgradeAllOrNothing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
         <pattern>
@@ -147,7 +148,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="springbook.user.service" />
       <option name="MAIN_CLASS_NAME" value="springbook.user.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="upgradeLevels" />
+      <option name="METHOD_NAME" value="upgradeAllOrNothing" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest.upgradeAllOrNothing" />
+        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.HelloTest.simpleProxy" />
         <item itemvalue="JUnit.ReflectionTest.invokeMethod" />
         <item itemvalue="JUnit.UserServiceTest.mockUpgradeLevels" />
-        <item itemvalue="JUnit.UserServiceTest.upgradeLevels" />
-        <item itemvalue="JUnit.UserServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +190,7 @@
       <workItem from="1581551652353" duration="354000" />
       <workItem from="1581661218656" duration="7880000" />
       <workItem from="1581895077915" duration="5044000" />
-      <workItem from="1581921443445" duration="1814000" />
+      <workItem from="1581921443445" duration="2631000" />
     </task>
     <servers />
   </component>
