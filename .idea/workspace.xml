@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,14 +51,14 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\learning-spring\src\resources\config" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\learning-spring\src\springbook\learningtest\template" />
       <recent name="D:\Projects\learning-spring\src" />
       <recent name="D:\Projects\learning-spring\src\springbook\user\test" />
       <recent name="C:\dev\learning-spring\src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Projects\learning-spring\src\resources\config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -74,7 +73,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.mockUpgradeLevels">
+  <component name="RunManager" selected="JUnit.ReflectionTest.invokeMethod">
+    <configuration name="ReflectionTest.invokeMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.learningtest.jdk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springbook.learningtest.jdk" />
+      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.jdk.ReflectionTest" />
+      <option name="METHOD_NAME" value="invokeMethod" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -101,22 +116,6 @@
       <option name="PACKAGE_NAME" value="springbook.user.service" />
       <option name="MAIN_CLASS_NAME" value="springbook.user.service.UserServiceTest" />
       <option name="METHOD_NAME" value="mockUpgradeLevels" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.upgradeAllOrNothing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learning-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springbook.user.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="springbook.user.service" />
-      <option name="MAIN_CLASS_NAME" value="springbook.user.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="upgradeAllOrNothing" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReflectionTest.invokeMethod" />
         <item itemvalue="JUnit.UserServiceTest.mockUpgradeLevels" />
         <item itemvalue="JUnit.UserServiceTest.upgradeLevels" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.UserServiceTest.upgradeAllOrNothing" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +187,7 @@
       <workItem from="1581466352333" duration="4333000" />
       <workItem from="1581551652353" duration="354000" />
       <workItem from="1581661218656" duration="7880000" />
-      <workItem from="1581895077915" duration="1570000" />
+      <workItem from="1581895077915" duration="3119000" />
     </task>
     <servers />
   </component>
