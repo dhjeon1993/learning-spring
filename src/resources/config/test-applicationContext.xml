@@ -31,4 +31,8 @@
     <bean id="mailSender" class="springbook.user.service.DummyMailSender">
     </bean>
 
+    <bean id="message"
+          class="springbook.learningtest.factorybean.MessageFactoryBean">
+        <property name="text" value="Factory Bean" />
+    </bean>
 </beans>
