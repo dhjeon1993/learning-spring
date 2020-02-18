@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/learningtest/proxy/HelloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/learningtest/proxy/HelloTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,14 +53,18 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Projects\learning-spring\src\resources\config" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\learning-spring\src\springbook\learningtest\template" />
       <recent name="D:\Projects\learning-spring\src" />
       <recent name="D:\Projects\learning-spring\src\springbook\user\test" />
       <recent name="C:\dev\learning-spring\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="springbook.service" />
+      <recent name="springbook.user.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\learning-spring\src\resources\config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -74,7 +79,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HelloTest.classNamePointcutAdvisor">
+  <component name="RunManager" selected="JUnit.UserServiceTest">
     <configuration name="FactoryBeanTest.getFactoryBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -155,8 +160,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HelloTest.classNamePointcutAdvisor" />
         <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.HelloTest.classNamePointcutAdvisor" />
         <item itemvalue="JUnit.HelloTest.pointcutAdvisor" />
         <item itemvalue="JUnit.HelloTest" />
         <item itemvalue="JUnit.FactoryBeanTest.getFactoryBean" />
@@ -190,7 +195,7 @@
       <workItem from="1581661218656" duration="7880000" />
       <workItem from="1581895077915" duration="5044000" />
       <workItem from="1581921443445" duration="12568000" />
-      <workItem from="1581985047752" duration="3184000" />
+      <workItem from="1581985047752" duration="4385000" />
     </task>
     <servers />
   </component>
