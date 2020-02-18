@@ -29,6 +29,22 @@ public class UserServiceImpl implements UserService {
         this.mailSender = mailSender;
     }
 
+    public void deleteAll() {
+        userDao.deleteAll();
+    }
+
+    public User get(String id) {
+        return userDao.get(id);
+    }
+
+    public List<User> getAll() {
+        return userDao.getAll();
+    }
+
+    public void update(User user) {
+        userDao.update(user);
+    }
+
     public void upgradeLevels() {
         List<User> users = userDao.getAll();
         for (User user : users) {

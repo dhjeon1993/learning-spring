@@ -4,8 +4,9 @@
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/learningtest/spring/pointcut/PointcutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/learningtest/spring/pointcut/PointcutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/TransactionAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,23 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
-    <configuration name="HelloTest.classNamePointcutAdvisor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learning-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springbook.learningtest.proxy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="springbook.learningtest.proxy" />
-      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.proxy.HelloTest" />
-      <option name="METHOD_NAME" value="classNamePointcutAdvisor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserServiceTest.transactionSync">
     <configuration name="PointcutTest.methodSignaturePointcut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -144,7 +129,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.advisorAutoProxyCreator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceTest.readOnlyTransactionAttribute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
         <pattern>
@@ -154,7 +139,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="springbook.user.service" />
       <option name="MAIN_CLASS_NAME" value="springbook.user.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="advisorAutoProxyCreator" />
+      <option name="METHOD_NAME" value="readOnlyTransactionAttribute" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.transactionSync" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.user.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springbook.user.service" />
+      <option name="MAIN_CLASS_NAME" value="springbook.user.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="transactionSync" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest.transactionSync" />
         <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.UserServiceTest.readOnlyTransactionAttribute" />
         <item itemvalue="JUnit.PointcutTest.pointcut" />
         <item itemvalue="JUnit.PointcutTest.methodSignaturePointcut" />
-        <item itemvalue="JUnit.UserServiceTest.advisorAutoProxyCreator" />
-        <item itemvalue="JUnit.HelloTest.classNamePointcutAdvisor" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +198,7 @@
       <workItem from="1581661218656" duration="7880000" />
       <workItem from="1581895077915" duration="5044000" />
       <workItem from="1581921443445" duration="12568000" />
-      <workItem from="1581985047752" duration="10481000" />
+      <workItem from="1581985047752" duration="17593000" />
     </task>
     <servers />
   </component>

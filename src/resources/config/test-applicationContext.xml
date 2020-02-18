@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/aop
+            http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+            http://www.springframework.org/schema/tx
+            http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
     <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
         <!-- String값이 아닌 값은 스프링 내부에서 자동으로 setter 메소드를 참고하여 값을 변환한다. -->
         <property name="driverClass" value="org.mariadb.jdbc.Driver"/>
@@ -35,28 +43,7 @@
         <property name="text" value="Factory Bean" />
     </bean>
 
-    <bean id="transactionAdvice"
-          class="org.springframework.transaction.interceptor.TransactionInterceptor">
-        <property name="transactionManager" ref="transactionManager"/>
-        <property name="transactionAttributes">
-            <props>
-                <prop key="get*">PROPAGATION_REQUIRED,readOnly,timeout_30</prop>
-                <prop key="upgrade*">PROPAGATION_REQUIRES_NEW, ISOLATION_SERIALIZABLE</prop>
-                <prop key="*">PROPAGATION_REQUIRED</prop>
-            </props>
-        </property>
-    </bean>
-
-    <bean id="transactionPointcut"
-          class="org.springframework.aop.aspectj.AspectJExpressionPointcut">
-        <property name="expression" value="execution(* *..*ServiceImpl.upgrade*(..))"/>
-    </bean>
-
-    <bean id="transactionAdvisor"
-          class="org.springframework.aop.support.DefaultPointcutAdvisor">
-        <property name="advice" ref="transactionAdvice"/>
-        <property name="pointcut" ref="transactionPointcut"/>
-    </bean>
+    <tx:annotation-driven />
 
     <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>
 </beans>
