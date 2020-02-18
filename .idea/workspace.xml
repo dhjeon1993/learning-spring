@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/config/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/learningtest/factorybean/FactoryBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/learningtest/factorybean/FactoryBeanTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/learning-spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/learningtest/proxy/HelloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/learningtest/proxy/HelloTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +46,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/mockito-all-1.10.19.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/spring-aop-3.0.7.RELEASE.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5632353" />
@@ -78,7 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
+  <component name="RunManager" selected="JUnit.HelloTest">
     <configuration name="FactoryBeanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -110,7 +107,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloTest.simpleProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HelloTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
         <pattern>
@@ -120,8 +117,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="springbook.learningtest.proxy" />
       <option name="MAIN_CLASS_NAME" value="springbook.learningtest.proxy.HelloTest" />
-      <option name="METHOD_NAME" value="simpleProxy" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HelloTest" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.FactoryBeanTest.getFactoryBean" />
         <item itemvalue="JUnit.FactoryBeanTest" />
         <item itemvalue="JUnit.UserServiceTest.upgradeAllOrNothing" />
-        <item itemvalue="JUnit.HelloTest.simpleProxy" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +189,7 @@
       <workItem from="1581551652353" duration="354000" />
       <workItem from="1581661218656" duration="7880000" />
       <workItem from="1581895077915" duration="5044000" />
-      <workItem from="1581921443445" duration="5727000" />
+      <workItem from="1581921443445" duration="12568000" />
     </task>
     <servers />
   </component>
