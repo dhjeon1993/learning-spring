@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/learning-spring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/learningtest/spring/pointcut/PointcutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/learningtest/spring/pointcut/PointcutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/TransactionAdvice.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PointcutTest.pointcut">
+  <component name="RunManager" selected="JUnit.UserServiceTest">
     <configuration name="HelloTest.classNamePointcutAdvisor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -161,10 +162,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.PointcutTest.pointcut" />
         <item itemvalue="JUnit.PointcutTest.methodSignaturePointcut" />
         <item itemvalue="JUnit.UserServiceTest.advisorAutoProxyCreator" />
-        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.HelloTest.classNamePointcutAdvisor" />
       </list>
     </recent_temporary>
@@ -196,7 +197,7 @@
       <workItem from="1581661218656" duration="7880000" />
       <workItem from="1581895077915" duration="5044000" />
       <workItem from="1581921443445" duration="12568000" />
-      <workItem from="1581985047752" duration="7015000" />
+      <workItem from="1581985047752" duration="10481000" />
     </task>
     <servers />
   </component>

@@ -60,6 +60,6 @@ public class PointcutTest {
                 "execution(* *(..))",
                 true, true, true, true, true, true
         );
-        
+
     }
 }
