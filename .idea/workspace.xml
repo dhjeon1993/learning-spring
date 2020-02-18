@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/learning-spring.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springbook/learningtest/proxy/HelloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/learningtest/proxy/HelloTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HelloTest">
+  <component name="RunManager" selected="JUnit.HelloTest.pointcutAdvisor">
     <configuration name="FactoryBeanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -122,6 +121,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HelloTest.pointcutAdvisor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.learningtest.proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springbook.learningtest.proxy" />
+      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.proxy.HelloTest" />
+      <option name="METHOD_NAME" value="pointcutAdvisor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -137,29 +152,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.upgradeAllOrNothing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learning-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springbook.user.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="springbook.user.service" />
-      <option name="MAIN_CLASS_NAME" value="springbook.user.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="upgradeAllOrNothing" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HelloTest.pointcutAdvisor" />
         <item itemvalue="JUnit.HelloTest" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.FactoryBeanTest.getFactoryBean" />
         <item itemvalue="JUnit.FactoryBeanTest" />
-        <item itemvalue="JUnit.UserServiceTest.upgradeAllOrNothing" />
       </list>
     </recent_temporary>
   </component>
@@ -190,6 +189,7 @@
       <workItem from="1581661218656" duration="7880000" />
       <workItem from="1581895077915" duration="5044000" />
       <workItem from="1581921443445" duration="12568000" />
+      <workItem from="1581985047752" duration="1470000" />
     </task>
     <servers />
   </component>
