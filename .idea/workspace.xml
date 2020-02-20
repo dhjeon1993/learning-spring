@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDaoJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDaoJdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/DummyMailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/DummyMailSender.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +72,7 @@
       <recent name="D:\Projects\learning-spring\src\resources\config" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest.update">
+  <component name="RunManager" selected="JUnit.UserDaoTest">
     <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -155,8 +153,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserDaoTest.update" />
         <item itemvalue="JUnit.UserDaoTest" />
+        <item itemvalue="JUnit.UserDaoTest.update" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.transactionSync" />
         <item itemvalue="JUnit.UserServiceTest.readOnlyTransactionAttribute" />
@@ -193,7 +191,7 @@
       <workItem from="1581985047752" duration="17593000" />
       <workItem from="1582102595354" duration="170000" />
       <workItem from="1582102999642" duration="4104000" />
-      <workItem from="1582154833067" duration="2176000" />
+      <workItem from="1582154833067" duration="3209000" />
     </task>
     <servers />
   </component>
@@ -214,26 +212,30 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1582158918192">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582158918192" />
     <state x="801" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1582103427611">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="801" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582103427611" />
-    <state width="1877" height="261" key="GridCell.Tab.0.bottom" timestamp="1582157850252">
+    <state width="1877" height="261" key="GridCell.Tab.0.bottom" timestamp="1582159160152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582157850252" />
-    <state width="1877" height="261" key="GridCell.Tab.0.center" timestamp="1582157850251">
+    <state width="1877" height="261" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582159160152" />
+    <state width="1877" height="261" key="GridCell.Tab.0.center" timestamp="1582159160152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582157850251" />
-    <state width="1877" height="261" key="GridCell.Tab.0.left" timestamp="1582157850250">
+    <state width="1877" height="261" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582159160152" />
+    <state width="1877" height="261" key="GridCell.Tab.0.left" timestamp="1582159160152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582157850250" />
-    <state width="1877" height="261" key="GridCell.Tab.0.right" timestamp="1582157850251">
+    <state width="1877" height="261" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582159160152" />
+    <state width="1877" height="261" key="GridCell.Tab.0.right" timestamp="1582159160152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582157850251" />
+    <state width="1877" height="261" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582159160152" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1582103297866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

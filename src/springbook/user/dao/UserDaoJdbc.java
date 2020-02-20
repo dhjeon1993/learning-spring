@@ -9,6 +9,7 @@ import org.springframework.jdbc.core.RowMapper;
 import springbook.user.domain.Level;
 import springbook.user.domain.User;
 import springbook.user.exceptions.DuplicateUserIdException;
+import springbook.user.sql.SqlService;
 
 import javax.sql.DataSource;
 import java.sql.*;
@@ -18,10 +19,10 @@ import java.util.Map;
 public class UserDaoJdbc implements UserDao{
     private JdbcTemplate jdbcTemplate;
 
-    private Map<String, String> sqlMap;
+    private SqlService sqlService;
 
-    public void setSqlMap(Map<String, String> sqlMap) {
-        this.sqlMap = sqlMap;
+    public void setSqlService(SqlService sqlService) {
+        this.sqlService = sqlService;
     }
 
     private RowMapper<User> userMapper =
@@ -46,7 +47,7 @@ public class UserDaoJdbc implements UserDao{
 
     public void add(final User user) {
         this.jdbcTemplate.update(
-                this.sqlMap.get("add")
+                this.sqlService.getSql("userAdd")
                 , user.getId()
                 , user.getName()
                 , user.getEmail()
@@ -59,7 +60,7 @@ public class UserDaoJdbc implements UserDao{
 
     public User get(String id) {
         return this.jdbcTemplate.queryForObject(
-                this.sqlMap.get("get"),
+                this.sqlService.getSql("userGet"),
                 new Object[] {id},
                 userMapper
         );
@@ -67,14 +68,14 @@ public class UserDaoJdbc implements UserDao{
 
     // 테이블의 모든 레코드를 삭제
     public void deleteAll() {
-        this.jdbcTemplate.update(this.sqlMap.get("deleteAll"));
+        this.jdbcTemplate.update(this.sqlService.getSql("userDeleteAll"));
     }
 
     /**
      * 테이블의 전체 레코드 수를 리턴
      */
     public int getCount() {
-        return this.jdbcTemplate.queryForInt(this.sqlMap.get("getCount"));
+        return this.jdbcTemplate.queryForInt(this.sqlService.getSql("userGetCount"));
     }
 
     /**
@@ -82,7 +83,7 @@ public class UserDaoJdbc implements UserDao{
      */
     public List<User> getAll() {
         return this.jdbcTemplate.query(
-                this.sqlMap.get("getAll"),
+                this.sqlService.getSql("userGetAll"),
                 userMapper
         );
     }
@@ -90,7 +91,7 @@ public class UserDaoJdbc implements UserDao{
     @Override
     public void update(User user) {
         this.jdbcTemplate.update(
-                this.sqlMap.get("update")
+                this.sqlService.getSql("userUpdate")
                 , user.getName(), user.getPassword(),
                 user.getEmail()
                 , user.getLevel().intValue(), user.getLogin(), user.getRecommend(),
