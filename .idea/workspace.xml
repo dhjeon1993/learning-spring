@@ -4,7 +4,6 @@
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDaoJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDaoJdbc.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,28 +50,45 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/springbook/learningtest/jdk/jaxb" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5632353" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Debugger" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\home\DEV\GIT\learning-spring\src\springbook\learningtest\jdk\jaxb" />
+      <recent name="D:\Projects\learning-spring\src\resources\config" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="springbook.service" />
+      <recent name="springbook.user.service" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\learning-spring\src\springbook\learningtest\template" />
       <recent name="D:\Projects\learning-spring\src" />
       <recent name="D:\Projects\learning-spring\src\springbook\user\test" />
       <recent name="C:\dev\learning-spring\src" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="springbook.service" />
-      <recent name="springbook.user.service" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Projects\learning-spring\src\resources\config" />
-    </key>
   </component>
   <component name="RunManager" selected="JUnit.UserDaoTest">
+    <configuration name="JaxbTest.readSqlmap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.learningtest.jdk.jaxb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springbook.learningtest.jdk.jaxb" />
+      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.jdk.jaxb.JaxbTest" />
+      <option name="METHOD_NAME" value="readSqlmap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -119,22 +135,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.readOnlyTransactionAttribute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learning-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springbook.user.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="springbook.user.service" />
-      <option name="MAIN_CLASS_NAME" value="springbook.user.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="readOnlyTransactionAttribute" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserServiceTest.transactionSync" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -154,10 +154,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UserDaoTest" />
+        <item itemvalue="JUnit.JaxbTest.readSqlmap" />
         <item itemvalue="JUnit.UserDaoTest.update" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.transactionSync" />
-        <item itemvalue="JUnit.UserServiceTest.readOnlyTransactionAttribute" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +191,7 @@
       <workItem from="1581985047752" duration="17593000" />
       <workItem from="1582102595354" duration="170000" />
       <workItem from="1582102999642" duration="4104000" />
-      <workItem from="1582154833067" duration="3209000" />
+      <workItem from="1582154833067" duration="6117000" />
     </task>
     <servers />
   </component>
@@ -212,30 +212,30 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1582158918192">
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1582161950455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582158918192" />
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582161950455" />
     <state x="801" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1582103427611">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="801" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582103427611" />
-    <state width="1877" height="261" key="GridCell.Tab.0.bottom" timestamp="1582159160152">
+    <state width="1877" height="261" key="GridCell.Tab.0.bottom" timestamp="1582162098410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582159160152" />
-    <state width="1877" height="261" key="GridCell.Tab.0.center" timestamp="1582159160152">
+    <state width="1877" height="261" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582162098410" />
+    <state width="1877" height="261" key="GridCell.Tab.0.center" timestamp="1582162098410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582159160152" />
-    <state width="1877" height="261" key="GridCell.Tab.0.left" timestamp="1582159160152">
+    <state width="1877" height="261" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582162098410" />
+    <state width="1877" height="261" key="GridCell.Tab.0.left" timestamp="1582162098410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582159160152" />
-    <state width="1877" height="261" key="GridCell.Tab.0.right" timestamp="1582159160152">
+    <state width="1877" height="261" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582162098410" />
+    <state width="1877" height="261" key="GridCell.Tab.0.right" timestamp="1582162098410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582159160152" />
+    <state width="1877" height="261" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582162098410" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1582103297866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

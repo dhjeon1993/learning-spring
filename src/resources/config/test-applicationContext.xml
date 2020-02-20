@@ -32,7 +32,10 @@
         <property name="sqlService" ref="sqlService"/>
     </bean>
 
-    <bean id="sqlService" class="springbook.user.sql.SimpleSqlService">
+    <bean id="sqlService" class="springbook.user.sql.XmlSqlService">
+    </bean>
+
+    <bean id="oldSqlService" class="springbook.user.sql.SimpleSqlService">
         <property name="sqlMap">
             <map>
                 <entry key="userAdd"
