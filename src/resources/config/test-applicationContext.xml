@@ -9,7 +9,10 @@
             http://www.springframework.org/schema/aop
             http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
             http://www.springframework.org/schema/tx
-            http://www.springframework.org/schema/tx/spring-tx-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+            http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd">
+
     <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
         <!-- String값이 아닌 값은 스프링 내부에서 자동으로 setter 메소드를 참고하여 값을 변환한다. -->
         <property name="driverClass" value="org.mariadb.jdbc.Driver"/>
@@ -33,6 +36,8 @@
     </bean>
 
     <bean id="sqlService" class="springbook.user.sql.XmlSqlService">
+        <property name="sqlmapFile"
+                  value="sqlmap.xml" />
     </bean>
 
     <bean id="oldSqlService" class="springbook.user.sql.SimpleSqlService">
@@ -68,6 +73,7 @@
     </bean>
 
     <tx:annotation-driven />
+    <context:annotation-config />
 
     <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>
 </beans>
