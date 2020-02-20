@@ -29,7 +29,24 @@
 
     <bean id="userDao" class="springbook.user.dao.UserDaoJdbc">
         <property name="dataSource" ref="dataSource"/>
+        <property name="sqlMap">
+            <map>
+                <entry key="add"
+                       value="insert into users(id, name, email, password, level, login, recommend) values(?, ?, ?, ?, ?, ?, ?)"/>
+                <entry key="get"
+                       value="SELECT * FROM users WHERE id = ?" />
+                <entry key="getAll"
+                       value="SELECT * FROM users" />
+                <entry key="deleteAll"
+                       value="DELETE FROM users" />
+                <entry key="getCount"
+                       value="SELECT COUNT(*) FROM users" />
+                <entry key="update"
+                       value="UPDATE users SET name = ?, password = ?, email = ?, level = ?, login = ?, recommend = ? WHERE id = ?" />
+            </map>
+        </property>
     </bean>
+
 
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>

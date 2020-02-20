@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDaoJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDaoJdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/DummyMailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/DummyMailSender.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,15 +43,21 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/aspectjtools-1.6.6.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5632353" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Debugger" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -69,46 +74,33 @@
       <recent name="D:\Projects\learning-spring\src\resources\config" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.transactionSync">
-    <configuration name="PointcutTest.methodSignaturePointcut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserDaoTest.update">
+    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="springbook.learningtest.spring.pointcut.*" />
+          <option name="PATTERN" value="springbook.user.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="springbook.learningtest.spring.pointcut" />
-      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.spring.pointcut.PointcutTest" />
-      <option name="METHOD_NAME" value="methodSignaturePointcut" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="springbook.user.test" />
+      <option name="MAIN_CLASS_NAME" value="springbook.user.test.UserDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PointcutTest.pointcut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserDaoTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="springbook.learningtest.spring.pointcut.*" />
+          <option name="PATTERN" value="springbook.user.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="springbook.learningtest.spring.pointcut" />
-      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.spring.pointcut.PointcutTest" />
-      <option name="METHOD_NAME" value="pointcut" />
+      <option name="PACKAGE_NAME" value="springbook.user.test" />
+      <option name="MAIN_CLASS_NAME" value="springbook.user.test.UserDaoTest" />
+      <option name="METHOD_NAME" value="update" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceTest.transactionSync" />
+        <item itemvalue="JUnit.UserDaoTest.update" />
+        <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.UserServiceTest.transactionSync" />
         <item itemvalue="JUnit.UserServiceTest.readOnlyTransactionAttribute" />
-        <item itemvalue="JUnit.PointcutTest.pointcut" />
-        <item itemvalue="JUnit.PointcutTest.methodSignaturePointcut" />
       </list>
     </recent_temporary>
   </component>
@@ -199,6 +191,9 @@
       <workItem from="1581895077915" duration="5044000" />
       <workItem from="1581921443445" duration="12568000" />
       <workItem from="1581985047752" duration="17593000" />
+      <workItem from="1582102595354" duration="170000" />
+      <workItem from="1582102999642" duration="4104000" />
+      <workItem from="1582154833067" duration="2176000" />
     </task>
     <servers />
   </component>
@@ -217,5 +212,35 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="801" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1582103427611">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="801" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582103427611" />
+    <state width="1877" height="261" key="GridCell.Tab.0.bottom" timestamp="1582157850252">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="261" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582157850252" />
+    <state width="1877" height="261" key="GridCell.Tab.0.center" timestamp="1582157850251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="261" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582157850251" />
+    <state width="1877" height="261" key="GridCell.Tab.0.left" timestamp="1582157850250">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="261" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582157850250" />
+    <state width="1877" height="261" key="GridCell.Tab.0.right" timestamp="1582157850251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="261" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582157850251" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1582103297866">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582103297866" />
+    <state x="657" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1582154868560">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="657" y="344" key="com.intellij.ide.util.TipDialog/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582154868560" />
   </component>
 </project>

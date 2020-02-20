@@ -13,9 +13,16 @@ import springbook.user.exceptions.DuplicateUserIdException;
 import javax.sql.DataSource;
 import java.sql.*;
 import java.util.List;
+import java.util.Map;
 
 public class UserDaoJdbc implements UserDao{
     private JdbcTemplate jdbcTemplate;
+
+    private Map<String, String> sqlMap;
+
+    public void setSqlMap(Map<String, String> sqlMap) {
+        this.sqlMap = sqlMap;
+    }
 
     private RowMapper<User> userMapper =
             new RowMapper<User>() {
@@ -38,8 +45,8 @@ public class UserDaoJdbc implements UserDao{
     }
 
     public void add(final User user) {
-        this.jdbcTemplate.update("INSERT INTO users(id, name, email, password, level, login, recommend)" +
-                        "VALUES (?, ?, ?, ?, ?, ?, ?)"
+        this.jdbcTemplate.update(
+                this.sqlMap.get("add")
                 , user.getId()
                 , user.getName()
                 , user.getEmail()
@@ -52,7 +59,7 @@ public class UserDaoJdbc implements UserDao{
 
     public User get(String id) {
         return this.jdbcTemplate.queryForObject(
-                "SELECT * FROM users WHERE id = ?",
+                this.sqlMap.get("get"),
                 new Object[] {id},
                 userMapper
         );
@@ -60,14 +67,14 @@ public class UserDaoJdbc implements UserDao{
 
     // 테이블의 모든 레코드를 삭제
     public void deleteAll() {
-        this.jdbcTemplate.update("DELETE FROM users");
+        this.jdbcTemplate.update(this.sqlMap.get("deleteAll"));
     }
 
     /**
      * 테이블의 전체 레코드 수를 리턴
      */
     public int getCount() {
-        return this.jdbcTemplate.queryForInt("SELECT COUNT(*) FROM users");
+        return this.jdbcTemplate.queryForInt(this.sqlMap.get("getCount"));
     }
 
     /**
@@ -75,7 +82,7 @@ public class UserDaoJdbc implements UserDao{
      */
     public List<User> getAll() {
         return this.jdbcTemplate.query(
-                "SELECT * FROM users ORDER BY id",
+                this.sqlMap.get("getAll"),
                 userMapper
         );
     }
@@ -83,8 +90,9 @@ public class UserDaoJdbc implements UserDao{
     @Override
     public void update(User user) {
         this.jdbcTemplate.update(
-                "UPDATE users SET name = ?, password = ?, level = ?, login = ?, "
-                + "recommend = ? where id = ? ", user.getName(), user.getPassword()
+                this.sqlMap.get("update")
+                , user.getName(), user.getPassword(),
+                user.getEmail()
                 , user.getLevel().intValue(), user.getLogin(), user.getRecommend(),
                 user.getId()
         );
