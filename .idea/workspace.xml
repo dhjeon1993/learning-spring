@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springbook/user/sql/OxmSqlService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/sql/OxmSqlService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +193,7 @@
       <workItem from="1582102595354" duration="170000" />
       <workItem from="1582102999642" duration="4104000" />
       <workItem from="1582154833067" duration="11592000" />
-      <workItem from="1582243630333" duration="8812000" />
+      <workItem from="1582243630333" duration="9697000" />
     </task>
     <servers />
   </component>
