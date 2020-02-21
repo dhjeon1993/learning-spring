@@ -35,11 +35,7 @@
         <property name="sqlService" ref="sqlService"/>
     </bean>
 
-    <bean id="sqlService" class="springbook.user.sql.XmlSqlService">
-        <property name="sqlmapFile"
-                  value="sqlmap.xml" />
-        <property name="sqlReader" ref="sqlService"/>
-        <property name="sqlRegistry" ref="sqlService"/>
+    <bean id="sqlService" class="springbook.user.sql.DefaultSqlService">
     </bean>
 
     <bean id="oldSqlService" class="springbook.user.sql.SimpleSqlService">
