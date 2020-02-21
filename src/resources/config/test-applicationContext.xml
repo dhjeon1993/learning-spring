@@ -35,7 +35,12 @@
         <property name="sqlService" ref="sqlService"/>
     </bean>
 
-    <bean id="sqlService" class="springbook.user.sql.DefaultSqlService">
+    <bean id="sqlService" class="springbook.user.sql.OxmSqlService">
+        <property name="unmarshaller" ref="unmarshaller"/>
+    </bean>
+
+    <bean id="unmarshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
+        <property name="contextPath" value="springbook.user.sql.jaxb"/>
     </bean>
 
     <bean id="oldSqlService" class="springbook.user.sql.SimpleSqlService">
