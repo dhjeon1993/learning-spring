@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="54d7c642-eba4-486c-9d2a-1ec57ef34570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/learning-spring.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/config/test-applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/test/ConcurrentHashMapSqlRegistryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/test/ConcurrentHashMapSqlRegistryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +52,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5632353" />
@@ -73,7 +75,7 @@
       <recent name="D:\Projects\learning-spring\src\resources\config" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ConcurrentHashMapSqlRegistryTest">
+  <component name="RunManager" selected="JUnit.UserDaoTest">
     <configuration name="ConcurrentHashMapSqlRegistryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
@@ -89,32 +91,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JaxbTest.readSqlmap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmbeddedDbSqlRegistryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="springbook.learningtest.jdk.jaxb.*" />
+          <option name="PATTERN" value="springbook.user.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="springbook.learningtest.jdk.jaxb" />
-      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.jdk.jaxb.JaxbTest" />
-      <option name="METHOD_NAME" value="readSqlmap" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="springbook.user.test" />
+      <option name="MAIN_CLASS_NAME" value="springbook.user.test.EmbeddedDbSqlRegistryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OxmTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmbeddedDbTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="springbook.learningtest.spring.oxm.*" />
+          <option name="PATTERN" value="springbook.user.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="springbook.learningtest.spring.oxm" />
-      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.spring.oxm.OxmTest" />
+      <option name="PACKAGE_NAME" value="springbook.user.test" />
+      <option name="MAIN_CLASS_NAME" value="springbook.user.test.EmbeddedDbTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ConcurrentHashMapSqlRegistryTest" />
         <item itemvalue="JUnit.UserDaoTest" />
+        <item itemvalue="JUnit.EmbeddedDbSqlRegistryTest" />
+        <item itemvalue="JUnit.ConcurrentHashMapSqlRegistryTest" />
+        <item itemvalue="JUnit.EmbeddedDbTest" />
         <item itemvalue="JUnit.OxmTest.unmarshallSqlMap" />
-        <item itemvalue="JUnit.OxmTest" />
-        <item itemvalue="JUnit.JaxbTest.readSqlmap" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +203,7 @@
       <workItem from="1582689342240" duration="1840000" />
       <workItem from="1583805727133" duration="6242000" />
       <workItem from="1583883816266" duration="18000" />
-      <workItem from="1585206823607" duration="1457000" />
+      <workItem from="1585206823607" duration="4129000" />
     </task>
     <servers />
   </component>
@@ -227,16 +228,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/1920.0.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1583807309497" />
-    <state x="552" y="178" key="#Project_Structure" timestamp="1582252447701">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1585209326699">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Project_Structure/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582244922842" />
+    <state x="552" y="178" key="#Project_Structure/1920.0.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1585209326699" />
     <state x="552" y="178" key="#Project_Structure/1920.504.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1582252447701" />
-    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1585208080641">
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1585210583752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582176527787" />
-    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/1920.0.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1585208080641" />
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/1920.0.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1585210583752" />
     <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/1920.504.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1582258048731" />
     <state x="801" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1582103427611">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -246,36 +248,36 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1585208088731" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1583883831510">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1585209289651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582244921104" />
-    <state x="740" y="274" key="FileChooserDialogImpl/1920.0.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1583883831510" />
+    <state x="740" y="274" key="FileChooserDialogImpl/1920.0.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1585209289651" />
     <state x="740" y="274" key="FileChooserDialogImpl/1920.138.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1582678220306" />
     <state x="740" y="274" key="FileChooserDialogImpl/1920.504.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1582500466305" />
-    <state width="1879" height="262" key="GridCell.Tab.0.bottom" timestamp="1585208463447">
+    <state width="1879" height="262" key="GridCell.Tab.0.bottom" timestamp="1585210957662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="261" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582178534116" />
-    <state width="1879" height="262" key="GridCell.Tab.0.bottom/1920.0.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1585208463447" />
+    <state width="1879" height="262" key="GridCell.Tab.0.bottom/1920.0.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1585210957662" />
     <state width="1877" height="261" key="GridCell.Tab.0.bottom/1920.504.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1582259520103" />
-    <state width="1879" height="262" key="GridCell.Tab.0.center" timestamp="1585208463447">
+    <state width="1879" height="262" key="GridCell.Tab.0.center" timestamp="1585210957662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="261" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582178534116" />
-    <state width="1879" height="262" key="GridCell.Tab.0.center/1920.0.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1585208463447" />
+    <state width="1879" height="262" key="GridCell.Tab.0.center/1920.0.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1585210957662" />
     <state width="1877" height="261" key="GridCell.Tab.0.center/1920.504.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1582259520103" />
-    <state width="1879" height="262" key="GridCell.Tab.0.left" timestamp="1585208463447">
+    <state width="1879" height="262" key="GridCell.Tab.0.left" timestamp="1585210957662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="261" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582178534116" />
-    <state width="1879" height="262" key="GridCell.Tab.0.left/1920.0.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1585208463447" />
+    <state width="1879" height="262" key="GridCell.Tab.0.left/1920.0.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1585210957662" />
     <state width="1877" height="261" key="GridCell.Tab.0.left/1920.504.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1582259520103" />
-    <state width="1879" height="262" key="GridCell.Tab.0.right" timestamp="1585208463447">
+    <state width="1879" height="262" key="GridCell.Tab.0.right" timestamp="1585210957662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="261" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582178534116" />
-    <state width="1879" height="262" key="GridCell.Tab.0.right/1920.0.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1585208463447" />
+    <state width="1879" height="262" key="GridCell.Tab.0.right/1920.0.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1585210957662" />
     <state width="1877" height="261" key="GridCell.Tab.0.right/1920.504.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1582259520103" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1582267177223">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -288,5 +290,9 @@
     <state x="657" y="344" key="com.intellij.ide.util.TipDialog/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582243629420" />
     <state x="657" y="344" key="com.intellij.ide.util.TipDialog/1920.0.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1583883817041" />
     <state x="657" y="344" key="com.intellij.ide.util.TipDialog/1920.504.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1582500450225" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585209486101">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1536.832/-1080.-498.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1585209486101" />
   </component>
 </project>

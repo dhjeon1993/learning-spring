@@ -4,6 +4,7 @@
        xmlns:tx="http://www.springframework.org/schema/tx"
        xmlns:aop="http://www.springframework.org/schema/aop"
        xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
             http://www.springframework.org/schema/beans/spring-beans.xsd
             http://www.springframework.org/schema/aop
@@ -11,7 +12,7 @@
             http://www.springframework.org/schema/tx
             http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
             http://www.springframework.org/schema/context
-            http://www.springframework.org/schema/context/spring-context.xsd">
+            http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
         <!-- String값이 아닌 값은 스프링 내부에서 자동으로 setter 메소드를 참고하여 값을 변환한다. -->
@@ -40,7 +41,9 @@
         <property name="sqlRegistry" ref="sqlRegistry"/>
     </bean>
 
-    <bean id="sqlRegistry" class="springbook.user.sql.ConcurrentHashMapSqlRegistry" />
+    <bean id="sqlRegistry" class="springbook.user.sql.EmbeddedDbSqlRegistry">
+        <property name="dataSource" ref="embeddedDatabase"/>
+    </bean>
 
     <bean id="unmarshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
         <property name="contextPath" value="springbook.user.sql.jaxb"/>
@@ -77,6 +80,10 @@
           class="springbook.learningtest.factorybean.MessageFactoryBean">
         <property name="text" value="Factory Bean" />
     </bean>
+
+    <jdbc:embedded-database id="embeddedDatabase" type="HSQL">
+        <jdbc:script location="classpath:/sql/schema.sql"/>
+    </jdbc:embedded-database>
 
     <tx:annotation-driven />
     <context:annotation-config />
