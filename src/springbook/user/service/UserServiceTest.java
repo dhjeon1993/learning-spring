@@ -207,7 +207,7 @@ public class UserServiceTest {
         assertThat(userDao.getCount(), is(0));
     }
 
-    static class TestUserServiceImpl extends UserServiceImpl {
+    public static class TestUserServiceImpl extends UserServiceImpl {
         private String id = "madnite1";
 
         @Override
