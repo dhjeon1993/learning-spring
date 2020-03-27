@@ -4,6 +4,7 @@ import org.hsqldb.Database;
 import org.mariadb.jdbc.Driver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
@@ -30,9 +31,13 @@ import javax.annotation.Resource;
 import javax.sql.DataSource;
 
 @Configuration
+@ComponentScan(basePackages = "springbook.user")
 @EnableTransactionManagement
 //@ImportResource("/resources/config/test-applicationContext.xml")
 public class TestApplicationContext {
+
+    @Autowired
+    private UserDao userDao;
 
     @Bean
     public DataSource dataSource(){
@@ -54,27 +59,11 @@ public class TestApplicationContext {
     }
 
     @Bean
-    public UserDao userDao() {
-        UserDaoJdbc dao = new UserDaoJdbc();
-        dao.setDataSource(dataSource());
-        dao.setSqlService(sqlService());
-        return dao;
-    }
-
-    @Bean
-    public UserService userService() {
-        UserServiceImpl userService = new UserServiceImpl();
-        userService.setMailSender(mailSender());
-        userService.setUserDao(userDao());
-        return userService;
-    }
-
-    @Bean
     public UserService testUserService() {
         UserServiceTest.TestUserServiceImpl testUserService =
                 new UserServiceTest.TestUserServiceImpl();
         testUserService.setMailSender(mailSender());
-        testUserService.setUserDao(userDao());
+        testUserService.setUserDao(this.userDao);
         return testUserService;
     }
 
