@@ -2,13 +2,13 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
-        <!-- String값이 아닌 값은 스프링 내부에서 자동으로 setter 메소드를 참고하여 값을 변환한다. -->
-        <property name="driverClass" value="org.mariadb.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://45.120.69.55/study_spring"/>
-        <property name="username" value="study_admin"/>
-        <property name="password" value="Tmxjel$&amp;*$8266"/>
-    </bean>
+<!--    <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">-->
+<!--        &lt;!&ndash; String값이 아닌 값은 스프링 내부에서 자동으로 setter 메소드를 참고하여 값을 변환한다. &ndash;&gt;-->
+<!--        <property name="driverClass" value="org.mariadb.jdbc.Driver"/>-->
+<!--        <property name="url" value="jdbc:mysql://45.120.69.55/study_spring"/>-->
+<!--        <property name="username" value="study_admin"/>-->
+<!--        <property name="password" value="Tmxjel$&amp;*$8266"/>-->
+<!--    </bean>-->
 
     <bean id="userServiceImpl" class="springbook.user.service.UserServiceImpl">
         <property name="userDao" ref="userDao"/>
