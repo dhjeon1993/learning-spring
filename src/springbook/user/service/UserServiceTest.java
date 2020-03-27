@@ -40,6 +40,7 @@ import static springbook.user.service.UserServiceImpl.MIN_RECOMMEND_FOR_GOLD;
 public class UserServiceTest {
     @Autowired
     UserService userService;
+
     @Autowired
     UserService testUserService;
 

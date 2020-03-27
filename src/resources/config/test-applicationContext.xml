@@ -39,7 +39,5 @@
         <property name="text" value="Factory Bean" />
     </bean>
 
-    <tx:annotation-driven />
-
     <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>
 </beans>

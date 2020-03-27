@@ -14,6 +14,7 @@ import org.springframework.mail.MailSender;
 import org.springframework.oxm.Unmarshaller;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import springbook.user.dao.UserDao;
 import springbook.user.dao.UserDaoJdbc;
 import springbook.user.service.DummyMailSender;
@@ -29,11 +30,9 @@ import javax.annotation.Resource;
 import javax.sql.DataSource;
 
 @Configuration
-@ImportResource("/resources/config/test-applicationContext.xml")
+@EnableTransactionManagement
+//@ImportResource("/resources/config/test-applicationContext.xml")
 public class TestApplicationContext {
-
-    @Autowired
-    private SqlService sqlService;
 
     @Bean
     public DataSource dataSource(){
@@ -58,7 +57,7 @@ public class TestApplicationContext {
     public UserDao userDao() {
         UserDaoJdbc dao = new UserDaoJdbc();
         dao.setDataSource(dataSource());
-        dao.setSqlService(this.sqlService);
+        dao.setSqlService(sqlService());
         return dao;
     }
 
@@ -95,7 +94,7 @@ public class TestApplicationContext {
     @Bean
     public DataSource embeddedDatabase() {
         return new EmbeddedDatabaseBuilder()
-                .setName("embeddedDatabase")
+//                .setName("embeddedDatabase")
                 .setType(EmbeddedDatabaseType.HSQL)
                 .addScript("classpath:/sql/schema.sql")
                 .build();
