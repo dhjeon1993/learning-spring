@@ -26,7 +26,7 @@ import static org.junit.Assert.assertThat;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {AppContext.class})
-@ActiveProfiles("production")
+@ActiveProfiles("test")
 public class UserDaoTest {
     @Autowired
     private UserDao dao;
