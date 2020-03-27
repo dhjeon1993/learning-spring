@@ -4,10 +4,12 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator;
 import org.springframework.jdbc.support.SQLExceptionTranslator;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import springbook.config.AppContext;
@@ -24,7 +26,8 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {AppContext.class, TestAppContext.class})
+@ContextConfiguration(classes = {AppContext.class})
+@ActiveProfiles("production")
 public class UserDaoTest {
     @Autowired
     private UserDao dao;
@@ -158,5 +161,16 @@ public class UserDaoTest {
         assertThat(user1.getLevel(), is(user2.getLevel()));
         assertThat(user1.getLogin(), is(user2.getLogin()));
         assertThat(user1.getRecommend(), is(user2.getRecommend()));
+    }
+
+    @Autowired
+    DefaultListableBeanFactory bf;
+
+    @Test
+    public void beans() {
+        for(String n : bf.getBeanDefinitionNames()) {
+            System.out.println("\n################# NAME : " + n);
+            System.out.println("################# CLASS : " + bf.getBean(n).getClass().getName() + "\n");
+        }
     }
 }

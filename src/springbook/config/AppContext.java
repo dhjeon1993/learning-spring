@@ -1,36 +1,21 @@
 package springbook.config;
 
-import org.hsqldb.Database;
 import org.mariadb.jdbc.Driver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.*;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
-import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
-import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 import org.springframework.mail.MailSender;
-import org.springframework.oxm.Unmarshaller;
-import org.springframework.oxm.jaxb.Jaxb2Marshaller;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import springbook.user.dao.UserDao;
-import springbook.user.dao.UserDaoJdbc;
-import springbook.user.service.DummyMailSender;
-import springbook.user.service.UserService;
-import springbook.user.service.UserServiceImpl;
-import springbook.user.service.UserServiceTest;
-import springbook.user.sql.EmbeddedDbSqlRegistry;
-import springbook.user.sql.OxmSqlService;
-import springbook.user.sql.SqlRegistry;
-import springbook.user.sql.SqlService;
-
-import javax.annotation.Resource;
 import javax.sql.DataSource;
 
 @Configuration
 @ComponentScan(basePackages = "springbook.user")
 @EnableTransactionManagement
-@Import(SqlServiceContext.class)
+@Import({SqlServiceContext.class, TestAppContext.class, ProductionAppContext.class})
 //@ImportResource("/resources/config/test-applicationContext.xml")
 public class AppContext {
 
@@ -55,6 +40,5 @@ public class AppContext {
         transactionManager.setDataSource(dataSource());
         return transactionManager;
     }
-
 
 }
