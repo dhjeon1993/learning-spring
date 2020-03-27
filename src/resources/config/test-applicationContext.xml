@@ -39,10 +39,6 @@
         <property name="text" value="Factory Bean" />
     </bean>
 
-    <jdbc:embedded-database id="embeddedDatabase" type="HSQL">
-        <jdbc:script location="classpath:/sql/schema.sql"/>
-    </jdbc:embedded-database>
-
     <tx:annotation-driven />
 
     <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>
